@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    min-height: 50rem;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+.aside-left{
+    position: relative;
+    width: 22%;
+    min-height: 100%;
+    padding: 2rem;
+    /* border: 1px solid black; */
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 78%;
+    min-height: 100%;
+    padding: 2rem;
+    /* border: 1px solid black; */
+}
+.caja{
+    border: 1px solid black;
+    height: 20rem;
+}
+.caja--2{
+    position: sticky;
+    top: 2rem;
+    background-color: var(--primaryColor);
+    /* border: 1px solid black; */
+}
