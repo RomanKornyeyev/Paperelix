@@ -14,26 +14,29 @@
     width: 100%;
     height: calc(100vh - 30rem);
     min-height: 48.5rem;
-    background: url('../img/hero_600_v2.jpg');
+    /* background: url('../img/hero_600_v2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center right; */
+    background: rgb(0,182,224);
+    background: radial-gradient(circle, rgba(114, 229, 255, 0.75) 25%,rgba(253, 114, 181, 0.75) 50%, rgba(137, 255, 139, 0.75) 75%, rgba(255, 163, 105, 0.75) 100%); 
     /* border: 1px solid black; */
 }
 .hero__content-wrapper{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    gap: 5rem;
+    gap: var(--gap-xxl);
     /* border: 1px solid black; */
 }
 .content-wrapper__content{
     display: flex;
     flex-flow: column;
+    justify-content: center;
     gap: 1.5rem;
     width: 35%;
     max-width: 120rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .content-wrapper__content--large{
     width: 75%;
