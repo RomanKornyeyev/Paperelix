@@ -125,12 +125,18 @@ h5{font-size: 1.8rem;}
     padding: 2rem;
     /* border: 1px solid black; */
 }
-.logo{
+
+.logo-png{
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+.logo-svg{
     height: 100%;
     max-height: 10rem;
     aspect-ratio: 2 / 1;
 }
-.logo--large{
+.logo-svg--large{
     max-height: 100%;
 }
 
@@ -162,15 +168,19 @@ h5{font-size: 1.8rem;}
 .svg-nav{
     height: 2rem;
 }
-.header-content__item{
+
+.h-content__item{
+    display: flex;
     width: 20rem;
     height: 100%;
-    display: flex;
+    /* border: 1px solid black; */
 }
-.header-content__item--left{
+
+.h-content__item--left{
     justify-content: flex-start;
 }
-.header-content__item--right{
+
+.h-content__item--right{
     justify-content: flex-end;
 }
 
