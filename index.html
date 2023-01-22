@@ -47,20 +47,25 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header__content ">
-            <div class="h-content__item h-content__item--left">
-                <img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle order1-mbl">
+        <div class="h-content__item h-content__item--left logo-mbl order0-mbl">
+            <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo"></a>
+        </div>
+
+        <div class="header__content header__content--pc">
+            <div class="h-content__item h-content__item--left logo-pc">
+                <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo"></a>
             </div>
 
-            <ul class="menu" role="navigation" aria-label="main">
-                <li class="menu__element"><a class="pinky" href="#">Hombre</a></li>
-                <li class="menu__element"><a class="pinky" href="#">Mujer</a></li>
-                <li class="menu__element"><a class="pinky" href="#">Divided</a></li>
-                <li class="menu__element"><a class="pinky" href="#">Niños</a></li>
-                <li class="menu__element"><a class="pinky" href="#">Accesorios</a></li>                
+            <ul class="menu menu--mbl order1-mbl" role="navigation" aria-label="main">
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Hombre</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Mujer</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Divided</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Niños</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Accesorios</a></li>                
             </ul>
 
-            <ul class="menu h-content__item h-content__item--right" role="navigation" aria-label="cuenta y sobre nosotros">
+            <ul class="menu h-content__item h-content__item--right order0-mbl" role="navigation" aria-label="cuenta y sobre nosotros">
                 <li class="menu__element">
                     <a href="#">
                         <i class="fa-solid fa-user pinky svg-nav"></i>
@@ -78,6 +83,12 @@
                 </li>
             </ul>
         </div>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="span-nav-top"></span>
+            <span class="span-nav-middle"></span>
+            <span class="span-nav-bottom"></span>
+        </label>
     </header>
 
     <!-- BODY -->
