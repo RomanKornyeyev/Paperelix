@@ -26,7 +26,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    gap: var(--gap-xxl);
+    gap: var(--space-xxl);
     /* border: 1px solid black; */
 }
 .content-wrapper__content{
@@ -67,7 +67,7 @@
 .section__content--category{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: var(--space-xl);
 }
 .section__content--recomendations{
     display: grid;
@@ -137,12 +137,12 @@
     text-decoration: underline;
 }
 
-/* ========== 810px (tablet and phone) ========== */
+/* ========== 810px (tablet) ========== */
 @media screen and (max-width: 810px) {
     /* === HERO === */
     .hero{height: fit-content;}
     .hero__content-wrapper{
-        padding: var(--padding-xxl) 0;
+        padding: var(--space-xxl) 0;
         flex-flow: column;
         justify-content: center;
         align-items: center;
@@ -157,7 +157,12 @@
 
     /* === SECTION__CONTENT === */
     .section__content{
-        padding: 0 var(--padding-xl);
+        padding: 0 var(--space-xl);
+    }
+
+    /* === CATEGORIES === */
+    .section__content--category{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* === MOST SOLD === */
@@ -173,6 +178,11 @@
 
 /* ========== 480px (phone) ========== */
 @media screen and (max-width: 480px) {
+    /* === CATEGORIES === */
+    .section__content--category{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     /* === MOST SOLD === */
     .section__content--recomendations{
         grid-template-columns: repeat(1, 1fr);
