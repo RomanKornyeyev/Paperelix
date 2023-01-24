@@ -355,7 +355,7 @@ h5{font-size: 1.8rem;}
     .nav-toggle-label{
         position: relative;
         cursor: pointer;
-        display: block;
+        /* display: block; */
         width: 4.5rem;
         height: 4.5rem;
         display: flex;
