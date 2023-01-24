@@ -1,3 +1,72 @@
 @import url('generales.css');
 
 /*AQUÍ VUESTRO CÓDIGO*/
+.container{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(114, 229, 255, 0.75) 25%,rgba(253, 114, 181, 0.75) 50%, rgba(137, 255, 139, 0.75) 75%, rgba(255, 163, 105, 0.75) 100%); 
+
+    /*borrar luego, es temporal*/
+    height: calc(100vh - 10rem - 11rem - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
+.main{
+    background-color: var(--beige);
+    min-width: 55vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: var(--space-m);
+    gap: var(--space-m);
+}
+.main__titulo{
+    text-align: center;
+}
+.main__formulario{
+    width: 90%;
+    min-height: 30rem;
+    padding: var(--space-m) var(--space-xl);
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+}
+.main__formulario>div{
+    width: 100%;
+}
+/*Dos elementos: nombre y correo, hago flex SOBRE LOS LABELS (no se si es lo correcto)*/
+.formulario__datos{
+    display:flex;
+    justify-content: space-between;
+}
+.formulario__datos>label{
+    width: 45%;
+}
+.formulario__mensaje, .formulario__datos>label{
+    display: flex;
+    flex-flow: column;
+    gap: var(--space-m);
+}
+input, textarea{
+    border: 2px solid;
+    padding: var(--space-s);
+    border-radius: var(--space-s);
+}
+
+.fomulario__boton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div{
+    border-radius: var(--space-s);
+}
+.container{
+    border-radius: 0;
+}
