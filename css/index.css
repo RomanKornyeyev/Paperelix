@@ -125,8 +125,8 @@
     text-align: center;
     /* border: 1px solid black; */
 }
-.benefit__icon{width: min(50%, 10rem);}
-.benefit__icon--sm{width: 8rem;}
+.benefit__icon{width: min(50%, 10rem); height: min(50%, 10rem);}
+/* .benefit__icon--sm{width: 8rem;} */
 .benefit__heading{line-height: 1.5;}
 .benefit__text{line-height: 1.3;}
 .benefit__link{
