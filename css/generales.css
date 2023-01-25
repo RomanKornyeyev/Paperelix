@@ -127,6 +127,7 @@ h5{font-size: 1.8rem;}
 
 .logo-png{
     height: 100%;
+    width: 100%;
     object-fit: contain;
     object-position: left;
 }
@@ -211,7 +212,7 @@ h5{font-size: 1.8rem;}
 .footer{
     width: 100%;
     min-height: 11rem;
-    padding: var(--space-l) 0;
+    padding: var(--space-s) 0;
     background-color: var(--dark-blue);
     color: var(--almost-white);
     /* border: 1px solid black; */
@@ -221,11 +222,11 @@ h5{font-size: 1.8rem;}
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 11rem;
+    height: 11rem;
     margin: 0 auto;
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
 }
-.footer-logo-wrapper{width: 15rem; }
+.footer-logo-wrapper{width: 15rem;}
 .menu--footer{justify-content: space-between;}
 .menu--footer *{color: var(--neon-blue-light);}
 .menu--footer__element:hover, .menu--footer__element:focus{text-decoration: underline;}
