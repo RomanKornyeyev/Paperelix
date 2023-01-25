@@ -46,7 +46,7 @@ body {
     height: 3.5rem;
     border-radius: 2.5rem;
     border: 2px solid var(--pink);
-    /* box-shadow: inset 0px 0px 1px 1px var(--pink); */
+    background-color: var(--primary-color);
     display: flex;
     justify-content: right;
     align-items: center;
