@@ -250,6 +250,7 @@ h5{font-size: 1.8rem;}
     border: 1px solid transparent;
 }
 /* = COLORES = */
+/* PRIMARY */
 .btn--primary{
     border-color: var(--light-purple);
 }
@@ -274,6 +275,16 @@ h5{font-size: 1.8rem;}
 }
 .btn--outline:hover, .btn--outline:focus{
     background-color: var(--light-purple);
+    color: var(--primary-color);
+}
+/* OUTLINE-BLACK*/
+.btn--outline-black{
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+.btn--outline-black:hover, .btn--outline-black:focus{
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 /* = TAMAÑOS = */
