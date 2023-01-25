@@ -6,56 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="La mejor moda friki de la web">
-    <meta name="keywords" content="camisetas, desarrollo web, programación">
-    <meta name="author" content="Román">
-    <meta name="copyright" content="Román">
+    <meta name="keywords" content="camisetas, accesorios, desarrollo web, programación">
+    <meta name="author" content="Anabel, Franco y Román">
+    <meta name="copyright" content="Anabel, Franco y Román">
+    
+    <!-- FONTS -->
+    <!-- capriola (h1 y h2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <!-- imprima (h3, h4, h5 y h6)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+    <!-- lato (rest of the text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- JS -->
     <link rel="preload" href="js/scrollreveal.js" as="script">
     <link rel="preload" href="js/sr-general.js" as="script">
     <script src="js/scrollreveal.js"></script>
     <script src="js/sr-general.js" defer></script>
+    
     <!-- CSS -->
     <link rel="preload" href="css/generales.css" as="styles">
     <link rel="preload" href="css/articles.css" as="styles">
     <link rel="stylesheet" href="css/generales.css">
     <link rel="stylesheet" href="css/articles.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    
     <!-- TITLE -->
-    <title>Front End Store - Artículos</title>
+    <title>Paperelix - Artículos</title>
     <link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <div class="header__content ">
-            <!-- <ul class="menu" role="navigation" aria-label="cuenta y sobre nosotros">
-                <li class="menu__element"><a href="#">Link</a></li>
-                <li class="menu__element"><a href="#">Link</a></li>
-                <li class="menu__element"><a href="#">Link</a></li>
-            </ul> -->
-            <h1 class="logo">DevBoutique</h1>
-            <ul class="menu" role="navigation" aria-label="main">
-                <li class="menu__element"><a href="#">Hombre</a></li>
-                <li class="menu__element"><a href="#">Mujer</a></li>
-                <li class="menu__element"><a href="#">Divided</a></li>
-                <li class="menu__element"><a href="#">Niños</a></li>
-                <li class="menu__element"><a href="#">Accesorios</a></li>
-                <!-- <li class="menu__element"><a href="#">Link</a></li> -->
+     <!-- HEADER -->
+     <header class="header">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle order1-mbl">
+        <div class="h-content__item h-content__item--left logo-mbl order0-mbl">
+            <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo"></a>
+        </div>
+
+        <div class="header__content header__content--pc">
+            <div class="h-content__item h-content__item--left logo-pc">
+                <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-rosa.png" alt="logo"></a>
+            </div>
+
+            <ul class="menu menu--mbl order1-mbl" role="navigation" aria-label="main">
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Hombre</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Mujer</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Divided</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Niños</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Accesorios</a></li>                
             </ul>
-            <ul class="menu" role="navigation" aria-label="cuenta y sobre nosotros">
-                <li class="menu__element"><a href="#">Iniciar sesion</a></li>
-                <li class="menu__element"><a href="#">Favoritos</a></li>
-                <li class="menu__element"><a href="#">Carrito</a></li>
+
+            <ul class="menu h-content__item h-content__item--right order0-mbl" role="navigation" aria-label="cuenta y sobre nosotros">
+                <li class="menu__element">
+                    <a href="#">
+                        <i class="fa-solid fa-user pinky svg-nav"></i>
+                    </a>
+                </li>
+                <li class="menu__element">
+                    <a href="#">
+                        <i class="fa-solid fa-heart pinky svg-nav"></i>
+                    </a>
+                </li>
+                <li class="menu__element">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping pinky svg-nav"></i>
+                    </a>
+                </li>
             </ul>
         </div>
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="span-nav-top"></span>
+            <span class="span-nav-middle"></span>
+            <span class="span-nav-bottom"></span>
+        </label>
     </header>
 
     <!-- BODY -->
     <div class="container limit-width">
-        <aside class="aside-left">
+        <!-- <aside class="aside-left">
             <nav class="caja--2" role="navigation" aria-label="main">
                 <a href="#" class="left-nav-link">Link</a>
                 <a href="#" class="left-nav-link">Link</a>
@@ -65,34 +103,38 @@
                 <a href="#" class="left-nav-link">Link</a>
                 <a href="#" class="left-nav-link">Link</a>
             </nav>
-        </aside>
+        </aside> -->
         <main class="main">
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
-            <div class="caja"> <img class="img-fit" src="img/css_awesome--black.jpg" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
+            <div class="caja"> <img class="img-fit" src="img/product_linux.png" alt="t-shirt"> </div>
         </main>
     </div>
 
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__content limit-width">
-            <h1>LOGO</h1>
-            <ul class="menu" role="navigation" aria-label="cuenta y sobre nosotros">
-                <li class="menu__session"><a href="#">Link</a></li>
-                <li class="menu__session"><a href="#">Link</a></li>
-                <li class="menu__session"><a href="#">Link</a></li>
+            <!-- <h1>DevBoutique</h1> -->
+            <div class="footer-logo-wrapper">
+                <a href="./index.html"><img class="logo-png" src="./img/logos-icons/PNG-azul.png" alt="logo"></a>
+            </div>
+            
+            <ul class="menu menu--footer" role="navigation" aria-label="sobre nosotros">
+                <li class="menu--footer__element"><a href="#">Link</a></li>
+                <li class="menu--footer__element"><a href="#">Link</a></li>
+                <li class="menu--footer__element"><a href="#">Link</a></li>
             </ul>
         </div>
     </footer>

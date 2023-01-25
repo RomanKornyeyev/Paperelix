@@ -20,7 +20,9 @@ h3, h4, h5, h6{font-family: 'Imprima', sans-serif;}
 html{font-size: 62.5%;}
 body{
     font-size: 1.6rem;
-    background-color: var(--beige);
+    /* background-color: var(--beige); */
+    background: rgb(0,182,224);
+    background: linear-gradient(rgba(114, 229, 255, 0.75) 25%,rgba(253, 114, 181, 0.75) 50%, rgba(137, 255, 139, 0.75) 75%, rgba(255, 163, 105, 0.75) 100%); 
 }
 a{
     text-decoration: none;
