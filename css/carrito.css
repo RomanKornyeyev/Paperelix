@@ -1,0 +1,25 @@
+@import url('generales.franco.css');
+
+/*AQUÍ VUESTRO CÓDIGO*/
+/* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
+.main{
+    border: 2px solid;
+    min-height: calc(100vh - 24rem);
+}
+.main__carrito{
+    background-color: red;
+    height: 300px;
+    width: 65%;
+}
+.main__listado{
+    padding: var(--space-xxl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.listado__titulo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 63% repeat(3, 9%);
+}
