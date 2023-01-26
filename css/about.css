@@ -1,0 +1,56 @@
+@import url(generales.css);
+/*-----------PRODUCTO--------------*/
+.section__content--info{
+    padding: 0 4rem;
+    gap:var(--space-xxl);
+    /* border:1px solid; */
+}
+.section__content--paper{
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:var(--space-xxl);
+    border:1px solid;
+}
+.paper__img-wrapper {
+    height:30rem;
+    border:1px solid;
+    background-image: url(../img/notas-01.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: var(--space-xxl);
+}
+/*-----------FOTO PRODUCTO --------------*/
+.info__img-wrapper{
+    position: relative;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.info__img-wrapper>h1 {
+    color: var(--dark-pink);
+    font-size: 15rem;
+    text-shadow: 1px 1px 5px var(--light-purple);
+}
+.info__img-fit {
+    position: absolute;
+    top: var(--space-ultra-xxl);
+    width: 70%;
+    object-position: bottom;
+    object-fit:contain;
+}
+.product-img{
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(1.2);
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(37, 8, 87, 0.8));
+    transition: all 350ms ease-out;
+}
+.content__text {
+    margin-top: var(--space-ml);
+    background-color: rgba(102, 19, 208, 0.4);
+    padding: var(--space-xxl);
+    color: var(--primary-color);
+}

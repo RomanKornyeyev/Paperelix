@@ -65,7 +65,7 @@
 
 /*----------- PRODUCTOS RELACIONADOS --------------*/
 .section--bg1{
-    padding: 0;
+    background-color: var(--primary-color);
 }
 .section__title{
     /* margin: 0 auto 2rem; */
