@@ -1,5 +1,8 @@
 @import url(generales.css);
 /*-----------PRODUCTO--------------*/
+.section {
+    padding: 3rem 0 2rem;
+}
 .section__content--product{
     padding: 0 4rem;
     display: grid;

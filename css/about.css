@@ -1,24 +1,38 @@
 @import url(generales.css);
 /*-----------PRODUCTO--------------*/
+
+.section {padding: 1rem 0 2rem;}
 .section__content--info{
-    padding: 0 4rem;
-    gap:var(--space-xxl);
-    /* border:1px solid; */
+    padding: 4rem 4rem 0rem;
 }
 .section__content--paper{
     padding: 0 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:var(--space-xxl);
-    border:1px solid;
+    gap:var(--space-ultra-xxl);
 }
 .paper__img-wrapper {
-    height:30rem;
-    border:1px solid;
+    height:27rem;
     background-image: url(../img/notas-01.svg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.paper__img-wrapper>h2 {
+    text-align: center;
+    padding: var(--space-xxxl) 0 var(--space-m);
+    border-bottom: 3px solid;
+}
+.paper__img-wrapper:nth-child(odd)>h2 {
+    color: var(--neon-blue);
+    border-color: var(--neon-blue);
+}
+.paper__img-wrapper:nth-child(even)>h2 {
+    color: var(--orange);
+    border-color: var(--orange);
+}
+.paper__img-wrapper>p {
     padding: var(--space-xxl);
+    text-align: justify;
 }
 /*-----------FOTO PRODUCTO --------------*/
 .info__img-wrapper{
