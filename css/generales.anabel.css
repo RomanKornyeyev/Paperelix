@@ -1,5 +1,6 @@
 /*Anabel*/
 @import url(generales.css);
+
 .container{
     display: flex;
     flex-flow: row wrap;
