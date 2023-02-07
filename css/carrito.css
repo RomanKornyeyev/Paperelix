@@ -24,7 +24,12 @@
     align-items: center;
     flex-flow: column;
     gap: var(--space-s);
-    background-color: green;
+}
+.listado__titulo{
+    text-align: center;
+}
+#titulo_izq{
+    text-align: left;
 }
 .listado__titulo, .listado__productos{
     width: 100%;
@@ -39,8 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
-    background-color: red;
 }
 .producto__imagen{
     display: flex;
@@ -56,11 +59,23 @@
     grid-template-columns: 3fr 7fr;
     gap: var(--space-xs);
 }
+.control_cantidad{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+/* esto esta bien ?  */
+.control_cantidad>*{
+    height: 30%;
+    padding: 0;
+}
 #cantidad{
-    width: 75%;
-    height: 50%;
     border: 1px solid;
     padding: var(--space-xs);
+    text-align: right;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
 }
 #producto__desc{
     width: 100%;
@@ -79,7 +94,7 @@
     grid-template-columns: 1fr 1fr;
 }
 .nota-pedido>div{
-    padding: var(--space-m) var(--space-xxl);
+    padding: var(--space-m) var(--space-ultra-xl);
     min-height: var(--space-ultra-l);
 }
 .label-comentario{
@@ -92,8 +107,8 @@
 }
 .subtotal-wrapper{
     display: flex;
-    justify-content: center;
-    gap: var(--space-xl);
+    justify-content: flex-end;
+    gap: var(--space-xxl);
 }
 .inputs-wrapper{
     display: flex;
@@ -128,5 +143,10 @@
     }
     #producto__desc{
         display: none;
+    }
+    /* arreglar esta query pocha */
+    .nota-pedido>div{
+        padding: var(--space-m) var(--space-xxl);
+        min-height: var(--space-ultra-l);
     }
 }

@@ -94,12 +94,12 @@
     <div class="container">
         <main class="main limit-width">
             <h1 class="titulo-carrito">
-                CARRITO DE LA COMPRA
+                Carrito de la compra
             </h1>
             <div class="productos-wrapper">
                 <div class="listado">
                     <div class="listado__titulo">
-                        <h4>Producto</h4>
+                        <h4 id="titulo_izq">Producto</h4>
                         <h4>Precio</h4>
                         <h4>Cantidad</h4>
                         <h4>Total</h4>
@@ -107,7 +107,7 @@
                     <div class="listado__productos">
                         <div class="producto" id="producto-imagen">
                             <div class="producto__imagen">
-                                <img src="https://picsum.photos/20" alt="Producto">
+                                <img src="./img/category_cup.jpg" alt="Producto">
                             </div>
                             <div id="producto__desc">
                                 <h4>Este es un producto</h4>
@@ -117,8 +117,10 @@
                         <div class="producto">
                             <h5>XX€</h5>
                         </div>
-                        <div class="producto">
-                            <input type="number" name="cantidad" id="cantidad" value="0">
+                        <div class="producto control_cantidad">
+                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn--outline" value="-">
+                            <input type="number" name="cantidad" id="cantidad" min="0" value="0">
+                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus btn--outline" value="+">                          
                         </div>
                         <div class="producto">
                             XX€
@@ -128,7 +130,7 @@
                     <div class="listado__productos">
                         <div class="producto" id="producto-imagen">
                             <div class="producto__imagen">
-                                <img src="https://picsum.photos/20" alt="Producto">
+                                <img src="./img/category_divided.jpg" alt="Producto">
                             </div>
                             <div id="producto__desc">
                                 <h4>Este es un producto</h4>
@@ -138,8 +140,10 @@
                         <div class="producto">
                             <h5>XX€</h5>
                         </div>
-                        <div class="producto">
-                            <input type="number" name="cantidad" id="cantidad" value="0">
+                        <div class="producto control_cantidad">
+                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn--outline" value="-">
+                            <input type="number" name="cantidad" id="cantidad" min="0" value="0">
+                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus btn--outline" value="+">                          
                         </div>
                         <div class="producto">
                             XX€
