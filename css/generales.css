@@ -351,12 +351,15 @@ h5{font-size: 1.8rem;}
 }
 
 /* xl cards (index)*/
+.card-xl:hover img{ transform: scale(1.2); }
 .card-xl__header{
     width: 100%;
     height: 30rem;
     border-bottom: 1px solid var(--light-gray1);
+    overflow: hidden;
     /* border: 1px solid black; */
 }
+.card-xl__header>img { transition: transform 250ms ease-out; }
 .card-xl__body, .card-xl__footer{background-color: var(--primary-color);}
 .card-xl__body{padding: 2rem 2rem 1rem}
 .card-xl-title{
