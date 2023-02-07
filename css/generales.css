@@ -21,8 +21,33 @@ html{font-size: 62.5%;}
 body{
     font-size: 1.6rem;
     /* background-color: var(--beige); */
-    background: rgb(0,182,224);
-    background: linear-gradient(rgba(114, 229, 255, 0.75) 25%,rgba(253, 114, 181, 0.75) 50%, rgba(137, 255, 139, 0.75) 75%, rgba(255, 163, 105, 0.75) 100%); 
+    /* background: rgb(0,182,224); */
+    /* background: linear-gradient(rgba(114, 229, 255, 0.75) 25%,rgba(253, 114, 181, 0.75) 50%, rgba(137, 255, 139, 0.75) 75%, rgba(255, 163, 105, 0.75) 100%);  */
+    background-image: linear-gradient(
+    190deg,
+    hwb(0 100% 0%) 0%,
+    hsl(55deg 100% 97%) 4%,
+    hsl(55deg 100% 94%) 8%,
+    hsl(55deg 100% 92%) 13%,
+    hsl(55deg 100% 89%) 18%,
+    hsl(55deg 100% 86%) 23%,
+    hsl(43deg 100% 83%) 28%,
+    hsl(23deg 100% 84%) 33%,
+    hsl(349deg 100% 86%) 38%,
+    hsl(321deg 100% 84%) 44%,
+    hsl(263deg 88% 84%) 49%,
+    hsl(219deg 100% 80%) 55%,
+    hsl(202deg 100% 75%) 60%,
+    hsl(194deg 100% 72%) 65%,
+    hsl(188deg 97% 74%) 71%,
+    hsl(176deg 87% 78%) 76%,
+    hsl(163deg 100% 86%) 81%,
+    hsl(163deg 100% 89%) 86%,
+    hsl(162deg 100% 92%) 91%,
+    hsl(162deg 100% 95%) 95%,
+    hsl(162deg 100% 97%) 98%,
+    hsl(0deg 0% 100%) 100%
+);
 }
 a{
     text-decoration: none;
