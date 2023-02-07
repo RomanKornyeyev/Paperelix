@@ -4,32 +4,76 @@
     width: 100%;
     min-height: 50rem;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-/* .aside-left{
-    position: relative;
-    width: 22%;
-    min-height: 100%;
-    padding: 2rem;
-    border: 1px solid black;
+/* === CATEGORY === */
+.category{
+    width: 100%;
+    background-color: var(--neon-blue);
+    padding: var(--space-xxl);
+    box-shadow: 0px 1px 4px -2px var(--strong-gray1);
+}
+
+/* === FILTERS === */
+.filters{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+    padding: var(--space-xl);
+    padding-bottom: 0;
+}
+
+/* .filters__aside{
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--space-xs);
 } */
+
+/* === MAIN === */
 .main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-xl);
-    width: 78%;
+    width: 100%;
     min-height: 100%;
-    padding: 2rem;
+    padding: var(--space-xl);
     /* border: 1px solid black; */
 }
 .caja{
     border: 1px solid black;
     height: 20rem;
 }
-.caja--2{
-    position: sticky;
-    top: 2rem;
-    background-color: var(--primary-color);
-    /* border: 1px solid black; */
+
+/* ========== 1100px (extra) ========== */
+@media screen and (max-width: 1100px){
+    .main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ========== 810px (tablet) ========== */
+@media screen and (max-width: 810px){
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========== 580px (extra) ========== */
+@media screen and (max-width: 580px) {
+    .filters{
+        flex-flow: column;
+        gap: var(--space-s);
+    }
+}
+
+/* ========== 480px (phone) ========== */
+@media screen and (max-width: 480px) {
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--space-l);
+        padding: var(--space-l);
+    }
 }
