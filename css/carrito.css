@@ -4,22 +4,114 @@
 /* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
 .main{
     border: 2px solid;
-    min-height: calc(100vh - 24rem);
+    min-height: calc(100vh - 22rem);
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    gap: 0;
 }
-.main__carrito{
-    background-color: red;
-    height: 300px;
+.productos-wrapper{
+    /* cambiar luego */
+    background-color: #eaeaea;
+    min-height: 30rem;
     width: 65%;
 }
-.main__listado{
+.listado{
     padding: var(--space-xxl);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    gap: var(--space-s);
 }
-.listado__titulo{
+.listado__titulo, .listado__productos{
     width: 100%;
     display: grid;
     grid-template-columns: 63% repeat(3, 9%);
+}
+.listado__productos>div{
+    height: 100px;
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.producto__imagen>img{
+    object-position: cover;
+    width: 100%;
+    height: 100%;
+}
+#producto-imagen{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: var(--space-xs);
+}
+#cantidad{
+    width: 75%;
+    height: 50%;
+    border: 1px solid;
+    padding: var(--space-xs);
+}
+#producto__desc{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    padding: 0 var(--space-m);
+}
+.nota-pedido{
+    background-color: #eaeaea;
+    border-radius:0;
+    border-top: 2px solid;
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nota-pedido>div{
+    padding: var(--space-m) var(--space-xxl);
+    min-height: var(--space-ultra-l);
+}
+.label-comentario{
+    display: flex;
+    flex-flow: column;
+    gap: var(--space-s);
+}
+.subtotal-wrapper>h5{
+    display: block;
+}
+.subtotal-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xl);
+}
+.inputs-wrapper{
+    display: flex;
+    flex-flow: column;
+    gap: var(--space-l);
+}
+.inputs-wrapper>div{
+    width: 100%;
+    height: var(--space-xxxl);
+}
+.wrapper-pagar{
+    display: flex;
+    justify-content: flex-end;
+}
+.wrapper-otros{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-l);
+}
+
+/* solucionar mas tarde, comentar el miercoles */
+/* los botones no son responsive? idk */
+input[type="button"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 1.8rem; */
 }

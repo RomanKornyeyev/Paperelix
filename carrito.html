@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="css/carrito.css">
     
     <!-- TITLE -->
-    <title>Contacto</title>
+    <title>Carrito de la compra</title>
     <link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <body>
@@ -93,11 +93,11 @@
     <!-- BODY -->
     <div class="container">
         <main class="main limit-width">
-            <h1 class="main__titulo">
+            <h1 class="titulo-carrito">
                 CARRITO DE LA COMPRA
             </h1>
-            <div class="main__carrito">
-                <div class="main__listado">
+            <div class="productos-wrapper">
+                <div class="listado">
                     <div class="listado__titulo">
                         <h4>Cosa</h4>
                         <h4>Cosa</h4>
@@ -105,7 +105,71 @@
                         <h4>Cosa</h4>
                     </div>
                     <div class="listado__productos">
+                        <div class="producto" id="producto-imagen">
+                            <div class="producto__imagen">
+                                <img src="https://picsum.photos/20" alt="Producto">
+                            </div>
+                            <div id="producto__desc">
+                                <h4>Este es un producto</h4>
+                                <a href="#">Quitar</a>
+                            </div>
+                        </div>
+                        <div class="producto">
+                            <h5>XX€</h5>
+                        </div>
+                        <div class="producto">
+                            <input type="number" name="cantidad" id="cantidad" value="0">
+                        </div>
+                        <div class="producto">
+                            XX€
+                        </div>
+                        
+                    </div>
+                    <div class="listado__productos">
+                        <div class="producto" id="producto-imagen">
+                            <div class="producto__imagen">
+                                <img src="https://picsum.photos/20" alt="Producto">
+                            </div>
+                            <div id="producto__desc">
+                                <h4>Este es un producto</h4>
+                                <a href="#">Quitar</a>
+                            </div>
+                        </div>
+                        <div class="producto">
+                            <h5>XX€</h5>
+                        </div>
+                        <div class="producto">
+                            <input type="number" name="cantidad" id="cantidad" value="0">
+                        </div>
+                        <div class="producto">
+                            XX€
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="nota-pedido">
+                <div class="comentario-wrapper">
+                    <label class="label-comentario" for="comentario">
+                        Nota al pedido
+                        <textarea name="comentario" id="comentario" cols="20" rows="4"></textarea>
+                    </label>
+                </div>
+                <div class="subtotal-wrapper">
+                    <h5>Subtotal: </h5>
+                    <h5 class="subtotal">XX€</h5>
+                </div>
+                <div class="empty-wrapper">
 
+                </div>
+                <div class="inputs-wrapper">
+                    <div class="wrapper-pagar">
+                        <input type="button" class="pagar btn btn--primary" id="pagar" value="pagar">
+                    </div>
+                    <div class="wrapper-otros">
+                        <input type="button" class="metodo btn btn--secondary" id="metodo" value="metodo">
+                        <input type="button" class="metodo btn btn--secondary" id="metodo" value="metodo">
+                        <input type="button" class="metodo btn btn--secondary" id="metodo" value="metodo">
                     </div>
                 </div>
             </div>
