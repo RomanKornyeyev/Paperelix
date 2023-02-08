@@ -18,8 +18,31 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right; */
-    background: rgb(0,182,224);
-    background: radial-gradient(circle, rgba(114, 229, 255, 0.75) 25%,rgba(253, 114, 181, 0.75) 50%, rgba(137, 255, 139, 0.75) 75%, rgba(255, 163, 105, 0.75) 100%); 
+    background-image: linear-gradient(
+        190deg,
+        hwb(0 100% 0%) 0%,
+        hsl(55deg 100% 97%) 4%,
+        hsl(55deg 100% 94%) 8%,
+        hsl(55deg 100% 92%) 13%,
+        hsl(55deg 100% 89%) 18%,
+        hsl(55deg 100% 86%) 23%,
+        hsl(43deg 100% 83%) 28%,
+        hsl(23deg 100% 84%) 33%,
+        hsl(349deg 100% 86%) 38%,
+        hsl(321deg 100% 84%) 44%,
+        hsl(263deg 88% 84%) 49%,
+        hsl(219deg 100% 80%) 55%,
+        hsl(202deg 100% 75%) 60%,
+        hsl(194deg 100% 72%) 65%,
+        hsl(188deg 97% 74%) 71%,
+        hsl(176deg 87% 78%) 76%,
+        hsl(163deg 100% 86%) 81%,
+        hsl(163deg 100% 89%) 86%,
+        hsl(162deg 100% 92%) 91%,
+        hsl(162deg 100% 95%) 95%,
+        hsl(162deg 100% 97%) 98%,
+        hsl(0deg 0% 100%) 100%
+    );
     /* border: 1px solid black; */
 }
 .hero__content-wrapper{
@@ -47,16 +70,13 @@
 .main{
     width: 100%;
     margin: 0 auto;
-    background-color: var(--beige);
+    /* background-color: var(--beige); */
     /* border: 1px solid black; */
 }
 .section{
     width: 100%;
     margin: 0 auto;
     padding: 3rem 0 2rem;
-}
-.section--bg1{
-    background-color: var(--baby-blue);
 }
 .section__title{
     margin: 0 auto 2rem;
@@ -103,7 +123,7 @@
 .category__img-wrapper--blue{background-color: var(--baby-blue);}
 .category__img-wrapper--orange{background-color: var(--orange);}
 .category-img{
-    width: 50%;
+    width: 70%;
     object-fit: cover ;
     object-position: center;
     filter: grayscale(100%);

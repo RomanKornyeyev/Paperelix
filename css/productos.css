@@ -11,14 +11,8 @@
    
 }
 /*-----------FOTO PRODUCTO --------------*/
-.product-img{
-    width: 80%;
-    object-fit: cover;
-    object-position: center;
-    filter: saturate(1.2);
-    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(37, 8, 87, 0.8));
-    transition: all 350ms ease-out;
-}
+/* --- product-img pasado a generales --- */
+/* --- fin product-img --- */
 .product__img-wrapper{
     height: 50rem;
     display: flex;
