@@ -18,7 +18,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right; */
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         190deg,
         hwb(0 100% 0%) 0%,
         hsl(55deg 100% 97%) 4%,
@@ -42,7 +42,7 @@
         hsl(162deg 100% 95%) 95%,
         hsl(162deg 100% 97%) 98%,
         hsl(0deg 0% 100%) 100%
-    );
+    ); */
     /* border: 1px solid black; */
 }
 .hero__content-wrapper{

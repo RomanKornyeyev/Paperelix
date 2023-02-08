@@ -420,6 +420,41 @@ h5{font-size: 1.8rem;}
     color: var(--beige);
 }
 
+/* === BG FIXED (INDEX) === */
+.bg-fixed-index{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        190deg,
+        hwb(0 100% 0%) 0%,
+        hsl(55deg 100% 97%) 4%,
+        hsl(55deg 100% 94%) 8%,
+        hsl(55deg 100% 92%) 13%,
+        hsl(55deg 100% 89%) 18%,
+        hsl(55deg 100% 86%) 23%,
+        hsl(43deg 100% 83%) 28%,
+        hsl(23deg 100% 84%) 33%,
+        hsl(349deg 100% 86%) 38%,
+        hsl(321deg 100% 84%) 44%,
+        hsl(263deg 88% 84%) 49%,
+        hsl(219deg 100% 80%) 55%,
+        hsl(202deg 100% 75%) 60%,
+        hsl(194deg 100% 72%) 65%,
+        hsl(188deg 97% 74%) 71%,
+        hsl(176deg 87% 78%) 76%,
+        hsl(163deg 100% 86%) 81%,
+        hsl(163deg 100% 89%) 86%,
+        hsl(162deg 100% 92%) 91%,
+        hsl(162deg 100% 95%) 95%,
+        hsl(162deg 100% 97%) 98%,
+        hsl(0deg 0% 100%) 100%
+    );
+    z-index: -1;
+}
+
 /* ========== 810px (tablet) ========== */
 @media screen and (max-width: 810px){
     /* === HEADER + NAV === */
@@ -564,3 +599,4 @@ h5{font-size: 1.8rem;}
 .margin-bottom-0 {margin-bottom: 0;}
 .border-radius-0{border-radius: 0;}
 .text-align-center{text-align: center;}
+
