@@ -46,7 +46,11 @@
     border: 1px solid black;
     height: 20rem;
 }
-
+.color_0 {background-color: #BCECFF;}
+.color_1 {background-color: #FFD0B4;}
+.color_2 {background-color: #FFFCDF;}
+.color_3 {background-color: #ECE0FF;}
+.color_4 {background-color: #D1FFDB;}
 /* ========== 1100px (extra) ========== */
 @media screen and (max-width: 1100px){
     .main{

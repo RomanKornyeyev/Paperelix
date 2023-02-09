@@ -31,8 +31,11 @@
     <!-- JS -->
     <link rel="preload" href="js/scrollreveal.js" as="script">
     <link rel="preload" href="js/sr-general.js" as="script">
+    <link rel="preload" href="js/articles.js" as="script">
     <script src="js/scrollreveal.js"></script>
     <script src="js/sr-general.js" defer></script>
+    <script src="js/articles.js" defer></script>
+    <script src="js/inventario.json" defer></script>
     
     <!-- CSS -->
     <link rel="preload" href="css/generales.css" as="styles">
@@ -93,7 +96,7 @@
 
     <!-- BODY -->
     <section class="category">
-        <h1 class="category__heading text-align-center">CATEGORÍA</h1>
+        <h1 class="category__heading text-align-center"></h1>
     </section>
     <div class="container limit-width">
         <nav class="filters" role="navigation" aria-label="main">
@@ -108,200 +111,7 @@
                 <a href="#" class="btn btn--sm btn--secondary">FILTRO</a>
             </div>
         </nav>
-        <main class="main">
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card shadow-a">
-                <a href="#">
-                    <div class="card__header">
-                        <img class="img-fit product-img" src="img/productos/product-linux.png" alt="producto">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">NOMBRE PRODUCTO</h3>
-                        <p><strong>Precio</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </main>
+        <main class="main"></main>
     </div>
 
     <!-- FOOTER -->

@@ -1,0 +1,110 @@
+[
+    {
+        "nombre": "Mini calabazas",
+        "categoria": "pendientes", 
+        "ruta": "producto-calabazas.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Cañitas",
+        "categoria": "pendientes", 
+        "ruta": "producto-cervezas.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Flores",
+        "categoria": "pendientes", 
+        "ruta": "producto-flores.png", 
+        "precio": 9 
+    },
+    {
+        "nombre": "Globos fiesta",
+        "categoria": "pendientes", 
+        "ruta": "producto-globos.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Porciones pizza",
+        "categoria": "pendientes", 
+        "ruta": "producto-pizzas.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Maki vegetal",
+        "categoria": "pendientes", 
+        "ruta": "producto-sushi.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Doggo Terrier",
+        "categoria": "pendientes", 
+        "ruta": "producto-perros.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Patitos",
+        "categoria": "pendientes", 
+        "ruta": "producto-patitos.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Onigiris",
+        "categoria": "pendientes", 
+        "ruta": "producto-onigiris.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Java Enjoyers",
+        "categoria": "pendientes", 
+        "ruta": "producto-java.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Flores Pascua",
+        "categoria": "pendientes", 
+        "ruta": "producto-pascua.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Bingsu",
+        "categoria": "broches", 
+        "ruta": "producto-bingsu.png", 
+        "precio": 13 
+    },
+    {
+        "nombre": "Calabaza",
+        "categoria": "broches", 
+        "ruta": "producto-calabazaBroche.png", 
+        "precio": 12.5 
+    },
+    {
+        "nombre": "Mini maceta",
+        "categoria": "broches", 
+        "ruta": "producto-macetamini.png", 
+        "precio": 12.5 
+    },
+    {
+        "nombre": "Fantasma",
+        "categoria": "broches", 
+        "ruta": "producto-fantasma.png", 
+        "precio": 8 
+    },
+    {
+        "nombre": "Murcielago",
+        "categoria": "broches", 
+        "ruta": "producto-murcielago.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Tux",
+        "categoria": "colgantes", 
+        "ruta": "producto-linux.png", 
+        "precio": 10 
+    },
+    {
+        "nombre": "Baby Yoda",
+        "categoria": "colgantes", 
+        "ruta": "producto-grogu.png", 
+        "precio": 8 
+    }
+]
