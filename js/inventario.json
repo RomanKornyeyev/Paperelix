@@ -69,7 +69,9 @@
         "nombre": "Bingsu",
         "categoria": "broches", 
         "ruta": "producto-bingsu.png", 
-        "precio": 13 
+        "precio": 13,
+        "descripcion": "Disfruta de un bonito bingsu coreano, con helado de fresa, toppings de platano, mango y sirope de caramelo. Broche realizado enteramente de papel mediante la técnica del quilling.",
+        "extendido": "Material: Papel 80gr de colores."
     },
     {
         "nombre": "Calabaza",

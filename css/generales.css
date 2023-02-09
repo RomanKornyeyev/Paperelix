@@ -379,7 +379,11 @@ h5{font-size: 1.8rem;}
 .card-xl__header, .card__header{
     background-color: var(--beige);
 }
-
+.color_0 {background-color: #BCECFF;}
+.color_1 {background-color: #FFD0B4;}
+.color_2 {background-color: #FFFCDF;}
+.color_3 {background-color: #ECE0FF;}
+.color_4 {background-color: #D1FFDB;}
 
 .product-img{
     width: 80%;

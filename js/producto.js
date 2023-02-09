@@ -1,4 +1,5 @@
 let nombre = window.location.search.replace('?nombre=', "").replace(/\?url=producto-[a-zA-Z]*/, "").replace(/.png\b/, "").replace(/%20/, " ").replace(/%C3%B1/, "ñ");
+/* window.location.search.replace(/\?nombre=/, '').replace(/\?url=[a-zA-Z\-\%230]*.png/, ''); */
 
 let canvas = document.querySelector('.section__content--recomendations');
 let nombreProducto = document.querySelector('.content__title');
@@ -12,7 +13,33 @@ imagen.src = 'img/productos/'+ruta;
 imagen.alt = 'Producto '+nombre;
 let contenedorImagen = document.querySelector('.product__img-wrapper');
 contenedorImagen.appendChild(imagen);
+/* -------------------------------------------------------------------------------------------- */
+let descripcion = document.querySelector('.content__text');
+let textoDescripcion;
+getDescripcion(nombre)
 
+
+let productoActual = [];
+
+function getDescripcion(nombre) {
+    fetch('js/inventario.json')
+        .then(response => response.json())
+        .then(inventario => {
+            inventario.forEach(elemento => {
+                if (nombre == elemento.nombre) {
+                    textoDescripcion = document.createTextNode(elemento.descripcion);
+                    descripcion.appendChild(textoDescripcion);
+                    console.log(elemento.descripcion);
+                    productoActual.push(elemento);
+                }
+            })
+        });
+}
+
+function verMas() {
+    descripcion.innerHTML += productoActual[0]['extendido'];
+}
+/* -------------------------------------------------------------------------------------------- */
 let query = [];
 getRelacionados(nombre);
 
