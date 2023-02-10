@@ -43,7 +43,7 @@ function getDescripcion(nombre) {
 
 let unfold = document.querySelector('.unfold');
 let fold = document.querySelector('.fold');
-let contenidoDesplegable = document.querySelector('.desplegableExt');
+let contenidoDesplegable = document.querySelector('#desplegableExt');
 
 
 function verMas() {
@@ -53,17 +53,23 @@ function verMas() {
     for (let i = 0; i < keys.length; i++) {
         contenidoDesplegable.innerHTML+=`<strong>${keys[i]}:</strong> ${values[i]}<br><br>`
     }
-    contenidoDesplegable.style.display="block";
+    //contenidoDesplegable.style.display="block";
+    //despliegue con animación
+    contenidoDesplegable.classList.remove("folded");
+    contenidoDesplegable.classList.add("unfolded");
     unfold.style.display="none";
     fold.style.display="block";
-    descripcion.style.paddingBottom="0";
+    // descripcion.style.paddingBottom="0"; esto no ha hecho falta xD
 }
 
 function verMenos() {
-    contenidoDesplegable.style.display="none";
+    //contenidoDesplegable.style.display="none";
+    //despliegue con animación
+    contenidoDesplegable.classList.remove("unfolded");
+    contenidoDesplegable.classList.add("folded");
     unfold.style.display="block";
     fold.style.display="none";
-    descripcion.style.paddingBottom="var(--space-xl)";
+    //descripcion.style.paddingBottom="var(--space-xl)"; esto no ha hecho falta xD
 }
 /*------------------------------------------------------------------------------------- */
 getRelacionados(nombre);
@@ -78,7 +84,7 @@ function getRelacionados(nombre) {
             while (i < 3) {
                 index = Math.floor(Math.random() * inventario.length)
                 auxRepes.push(index);
-                if ((inventario[index]['nombre'] != nombre) && (!auxRepes.includes(index))) {
+                if ((inventario[index]['nombre'] != nombre) || (!auxRepes.includes(index))) {
                     console.log('entro');
                     let article = new Article(inventario[index].nombre, inventario[index].categoria, inventario[index].ruta, inventario[index].precio, inventario[index].descripcion, inventario[index].extendido, i);
                     i++;
