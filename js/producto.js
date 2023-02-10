@@ -50,7 +50,7 @@ function verMas() {
     let keys = Object.keys(productoActual[0]['extendido'])
     let values = Object.values(productoActual[0]['extendido'])
     for (let i = 0; i < keys.length; i++) {
-        contenidoDesplegable.innerHTML+=`<strong>${keys[i]}</strong> ${values[i]}<br><br>`
+        contenidoDesplegable.innerHTML+=`<strong>${keys[i]}:</strong> ${values[i]}<br><br>`
     }
     contenidoDesplegable.style.display="block";
     unfold.style.display="none";
