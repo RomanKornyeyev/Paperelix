@@ -30,7 +30,10 @@
     margin-bottom: var(--space-xxl);
 }
 .content__title, .content__text {
-    padding: var(--space-xl);
+    padding-top: var(--space-xl);
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+
 }
 .content__title {
     font-size: 3rem;
@@ -40,15 +43,24 @@
     border-left: 2px solid;
     border-right: 2px solid;
 }
+.content__price {
+    color: var(--pink);
+    padding: var(--space-xl) 0 0 var(--space-xl);
+    font-size: 2rem;
+    border-left: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+}
 .content__text {
     border-left: 2px solid;
     border-right: 2px solid;
+    text-align: justify;
 }
 .btn--extralg {
     border-width: 2px;
     width: 100%;
     border-radius: 0;
 }
+.fold {display: none;}
 /*-----------INFO BOTONES PRODUCTO--------------*/
 .info__btn {
     display: flex;

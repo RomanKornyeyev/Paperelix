@@ -14,10 +14,13 @@ imagen.alt = 'Producto '+nombre;
 let contenedorImagen = document.querySelector('.product__img-wrapper');
 contenedorImagen.appendChild(imagen);
 /* -------------------------------------------------------------------------------------------- */
+//Seleccionamos el bloque de la descripcion
 let descripcion = document.querySelector('.content__text');
 let textoDescripcion;
-getDescripcion(nombre)
+getDescripcion(nombre);
 
+//Seleccionamos elemento de tipo h4
+let precio = document.querySelector('h4');
 
 let productoActual = [];
 
@@ -29,15 +32,37 @@ function getDescripcion(nombre) {
                 if (nombre == elemento.nombre) {
                     textoDescripcion = document.createTextNode(elemento.descripcion);
                     descripcion.appendChild(textoDescripcion);
-                    console.log(elemento.descripcion);
+                    
+                    precio.innerHTML="Precio: "+elemento.precio+"€";
                     productoActual.push(elemento);
                 }
             })
         });
 }
 
+let unfold = document.querySelector('.unfold');
+let fold = document.querySelector('.fold');
+let contenidoDesplegable = document.querySelector('.desplegableExt');
+
+
 function verMas() {
-    descripcion.innerHTML += productoActual[0]['extendido'];
+    contenidoDesplegable.innerHTML="";
+    let keys = Object.keys(productoActual[0]['extendido'])
+    let values = Object.values(productoActual[0]['extendido'])
+    for (let i = 0; i < keys.length; i++) {
+        contenidoDesplegable.innerHTML+=`<strong>${keys[i]}</strong> ${values[i]}<br><br>`
+    }
+    contenidoDesplegable.style.display="block";
+    unfold.style.display="none";
+    fold.style.display="block";
+    descripcion.style.paddingBottom="0";
+}
+
+function verMenos() {
+    contenidoDesplegable.style.display="none";
+    unfold.style.display="block";
+    fold.style.display="none";
+    descripcion.style.paddingBottom="var(--space-xl)";
 }
 /* -------------------------------------------------------------------------------------------- */
 let query = [];

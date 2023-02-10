@@ -1,39 +1,75 @@
 [
     {
-        "nombre": "Mini calabazas",
+        "nombre": "Baby calabazas",
         "categoria": "pendientes", 
         "ruta": "producto-calabazas.png", 
-        "precio": 10 
+        "precio": 10,
+        "descripcion": "Porque llevando estas baby calabazas, todos los días del año pueden ser Halloween si quieres. ¡No lo dudes y hazte con estas calabazitas! Pendientes realizados enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Cañitas",
         "categoria": "pendientes", 
         "ruta": "producto-cervezas.png", 
-        "precio": 10 
+        "precio": 10,
+        "descripcion": "Divertidas jarras de cerveza para ir de tapas con tus amigos por el centro de la ciudad, en casa o de fiesta. Pendientes realizados enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Flores",
         "categoria": "pendientes", 
         "ruta": "producto-flores.png", 
-        "precio": 9 
+        "precio": 9,
+        "descripcion": "Dale un toque más especial y delicado a tu outfit con estas bonitas flores en colores beige y azul con remates en blanco, ¡100% combinable con todo tu armario! Pendientes realizados enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Globos fiesta",
         "categoria": "pendientes", 
         "ruta": "producto-globos.png", 
-        "precio": 10 
+        "precio": 10,
+        "descripcion": "¿Acaso no hay nada más fiestero que unos globitos por pendientes? Luce tu versión más alegre y vivarachera con ellos puestos, serás el alma de la fiesta. Pendientes realizados enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Porciones pizza",
         "categoria": "pendientes", 
         "ruta": "producto-pizzas.png", 
-        "precio": 10 
+        "precio": 10,
+        "descripcion": "Para todos los pizzalovers, ¡estos son vuestros pendientes! Dos porciones de pizza con su masa original, tomates cherries, aceitunas negras, queso,... Irresistibles y adorables. Pendientes realizados enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Maki vegetal",
         "categoria": "pendientes", 
         "ruta": "producto-sushi.png", 
-        "precio": 10 
+        "precio": 10,
+        "descripcion": "Porque el sushi no sólo se disfruta degustándolo... atrévete con estas piezas de maki vegetal que combina mango, aguacate y salmón. Pendientes realizados enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Doggo Terrier",
@@ -70,8 +106,12 @@
         "categoria": "broches", 
         "ruta": "producto-bingsu.png", 
         "precio": 13,
-        "descripcion": "Disfruta de un bonito bingsu coreano, con helado de fresa, toppings de platano, mango y sirope de caramelo. Broche realizado enteramente de papel mediante la técnica del quilling.",
-        "extendido": "Material: Papel 80gr de colores."
+        "descripcion": "Disfruta de un bonito bingsu coreano, con helado de fresa, toppings de plátano, mango y sirope de caramelo. Broche realizado enteramente de papel mediante la técnica del quilling.",
+        "extendido": {
+            "Material:": "Pendientes realizados con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Broche de acero inoxidable.",
+            "Medidas:": "cm aproximadamente.",
+            "¡Atención!": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        }
     },
     {
         "nombre": "Calabaza",
