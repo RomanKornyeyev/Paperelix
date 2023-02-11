@@ -74,7 +74,6 @@ function verMenos() {
 /*------------------------------------------------------------------------------------- */
 getRelacionados(nombre);
 function getRelacionados(nombre) {
-    
     fetch('js/inventario.json')
         .then(response => response.json())
         .then(inventario => {
@@ -83,13 +82,13 @@ function getRelacionados(nombre) {
             let auxRepes = [];
             while (i < 3) {
                 index = Math.floor(Math.random() * inventario.length)
-                auxRepes.push(index);
-                if ((inventario[index]['nombre'] != nombre) || (!auxRepes.includes(index))) {
+                if ((inventario[index]['nombre'] != nombre) && (!auxRepes.includes(index))) {
                     console.log('entro');
                     let article = new Article(inventario[index].nombre, inventario[index].categoria, inventario[index].ruta, inventario[index].precio, inventario[index].descripcion, inventario[index].extendido, i);
                     i++;
                     article.pintar();
-                }
+                } 
+                auxRepes.push(index);
             }
         });
 }
