@@ -28,16 +28,13 @@ function getDescripcion(nombre) {
     fetch('js/inventario.json')
         .then(response => response.json())
         .then(inventario => {
-            inventario.forEach(elemento => {
-                if (nombre == elemento.nombre) {
-                    productoActual = new Article(elemento.nombre, elemento.categoria, elemento.ruta, elemento.precio, elemento.descripcion, elemento.extendido, null);
-
-                    textoDescripcion = document.createTextNode(productoActual.descripcion);
-                    descripcion.appendChild(textoDescripcion);
-                    
-                    precio.innerHTML="Precio: "+productoActual.precio+"€";
-                }
+            let elemento = inventario.find((objeto)=>{
+                return objeto.nombre==nombre
             })
+            productoActual = new Article(elemento.nombre, elemento.categoria, elemento.ruta, elemento.precio, elemento.descripcion, elemento.extendido, null);
+            textoDescripcion = document.createTextNode(productoActual.descripcion);
+            descripcion.appendChild(textoDescripcion);
+            precio.innerHTML="Precio: "+productoActual.precio+"€";
         });
 }
 

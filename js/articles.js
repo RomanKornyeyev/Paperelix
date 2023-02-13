@@ -12,14 +12,14 @@ fetch('js/inventario.json')
     .then(response => response.json())
     .then(inventario => {
         let i=0;
-        inventario.forEach(element => {
-            if (element.categoria == categoria) {
-                
-                let article = new Article(element.nombre, element.categoria, element.ruta, element.precio, element.descripcion, element.extendido, i);
-                if (i < 4) { i++; } 
-                else { i = 0; }
-                article.pintar();
-            }
+        let matches = inventario.filter((elemento)=>{
+            return elemento.categoria==categoria
+        })
+        matches.forEach(element => {
+            let article = new Article(element.nombre, element.categoria, element.ruta, element.precio, element.descripcion, element.extendido, i);
+            if (i < 4) { i++; } 
+            else { i = 0; }
+            article.pintar();
         });
     });
 }
