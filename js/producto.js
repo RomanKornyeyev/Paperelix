@@ -89,3 +89,16 @@ function getRelacionados(nombre) {
             }
         });
 }
+
+let addCart = document.querySelector('.addCart');
+addCart.addEventListener("click", function () {
+    console.log(nombre)
+    let valor = localStorage.getItem(nombre);
+    if (valor != null) {
+        valor++;
+        localStorage.setItem(nombre, valor);
+    } else {
+        localStorage.setItem(nombre, 1);
+    }
+    
+}, nombre)
