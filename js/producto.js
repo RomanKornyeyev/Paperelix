@@ -35,6 +35,11 @@ function getDescripcion(nombre) {
             textoDescripcion = document.createTextNode(productoActual.descripcion);
             descripcion.appendChild(textoDescripcion);
             precio.innerHTML="Precio: "+productoActual.precio+"€";
+
+            let cosa = document.querySelector("#addCart")
+            cosa.addEventListener("click", function () {
+                addCart(productoActual.nombre)
+            }, productoActual.nombre)
         });
 }
 
@@ -45,28 +50,21 @@ let contenidoDesplegable = document.querySelector('#desplegableExt');
 
 function verMas() {
     contenidoDesplegable.innerHTML="";
-    let keys = Object.keys(productoActual.extendido)
-    let values = Object.values(productoActual.extendido)
-    for (let i = 0; i < keys.length; i++) {
-        contenidoDesplegable.innerHTML+=`<strong>${keys[i]}:</strong> ${values[i]}<br><br>`
+    for (const [key, value] of Object.entries(productoActual.extendido)) {
+        contenidoDesplegable.innerHTML+=`<strong>${key}:</strong> ${value}<br><br>`
     }
-    //contenidoDesplegable.style.display="block";
-    //despliegue con animación
+
     contenidoDesplegable.classList.remove("folded");
     contenidoDesplegable.classList.add("unfolded");
     unfold.style.display="none";
     fold.style.display="block";
-    // descripcion.style.paddingBottom="0"; esto no ha hecho falta xD
 }
 
 function verMenos() {
-    //contenidoDesplegable.style.display="none";
-    //despliegue con animación
     contenidoDesplegable.classList.remove("unfolded");
     contenidoDesplegable.classList.add("folded");
     unfold.style.display="block";
     fold.style.display="none";
-    //descripcion.style.paddingBottom="var(--space-xl)"; esto no ha hecho falta xD
 }
 /*------------------------------------------------------------------------------------- */
 getRelacionados(nombre);
@@ -89,16 +87,3 @@ function getRelacionados(nombre) {
             }
         });
 }
-
-let addCart = document.querySelector('.addCart');
-addCart.addEventListener("click", function () {
-    console.log(nombre)
-    let valor = localStorage.getItem(nombre);
-    if (valor != null) {
-        valor++;
-        localStorage.setItem(nombre, valor);
-    } else {
-        localStorage.setItem(nombre, 1);
-    }
-    
-}, nombre)
