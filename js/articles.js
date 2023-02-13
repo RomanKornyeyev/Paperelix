@@ -24,13 +24,3 @@ fetch('js/inventario.json')
     });
 }
 
-/* function addCart(nombre) {
-    console.log(nombre)
-    let valor = localStorage.getItem(nombre);
-    if (valor != null) {
-        valor++;
-        localStorage.setItem(nombre, valor);
-    } else {
-        localStorage.setItem(nombre, 1);
-    }
-} */

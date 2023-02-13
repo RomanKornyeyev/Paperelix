@@ -13,6 +13,9 @@ class Article {
         return resultado;
     }
     pintar() {
+        let parse = this.nombre.replace(" ", "");
+        let cantidadProductos = localStorage.getItem(this.nombre);
+        cantidadProductos = (cantidadProductos!=null)?cantidadProductos:0;
         canvas.innerHTML += `
             <div class="card shadow-a">
                 <a href="producto.html?nombre=`+ this.nombre + `?url=` + this.ruta + `">
@@ -26,8 +29,9 @@ class Article {
                         </div>
                 </a>
                 <div class="shopping">
+                <p id="`+parse+`">`+cantidadProductos+`</p>
                     <div class="cart addCart" onclick="addCart('`+this.nombre+`')">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
+                    <i class="fa-solid fa-bag-shopping svg-cart"></i>
                     </div>
                 </div>
             </div>`
@@ -36,7 +40,8 @@ class Article {
 }
 
 function addCart(nombre) {
-    console.log(nombre)
+    addCart.called=true;
+
     let valor = localStorage.getItem(nombre);
     if (valor != null) {
         valor++;
@@ -44,4 +49,10 @@ function addCart(nombre) {
     } else {
         localStorage.setItem(nombre, 1);
     }
+    reload(nombre, valor);
+}
+
+function reload(nombre, valor) {
+    let cantidad = document.querySelector('#'+nombre);
+    cantidad.innerHTML = valor;
 }
