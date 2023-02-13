@@ -14,12 +14,15 @@ imagen.alt = 'Producto '+nombre;
 let contenedorImagen = document.querySelector('.product__img-wrapper');
 contenedorImagen.appendChild(imagen);
 /* -------------------------------------------------------------------------------------------- */
+//Seleccionamos el bloque de la descripcion
 let descripcion = document.querySelector('.content__text');
 let textoDescripcion;
-getDescripcion(nombre)
+getDescripcion(nombre);
 
+//Seleccionamos elemento de tipo h4
+let precio = document.querySelector('h4');
 
-let productoActual = [];
+let productoActual;
 
 function getDescripcion(nombre) {
     fetch('js/inventario.json')
@@ -27,60 +30,65 @@ function getDescripcion(nombre) {
         .then(inventario => {
             inventario.forEach(elemento => {
                 if (nombre == elemento.nombre) {
-                    textoDescripcion = document.createTextNode(elemento.descripcion);
+                    productoActual = new Article(elemento.nombre, elemento.categoria, elemento.ruta, elemento.precio, elemento.descripcion, elemento.extendido, null);
+
+                    textoDescripcion = document.createTextNode(productoActual.descripcion);
                     descripcion.appendChild(textoDescripcion);
-                    console.log(elemento.descripcion);
-                    productoActual.push(elemento);
+                    
+                    precio.innerHTML="Precio: "+productoActual.precio+"€";
                 }
             })
         });
 }
 
-function verMas() {
-    descripcion.innerHTML += productoActual[0]['extendido'];
-}
-/* -------------------------------------------------------------------------------------------- */
-let query = [];
-getRelacionados(nombre);
+let unfold = document.querySelector('.unfold');
+let fold = document.querySelector('.fold');
+let contenidoDesplegable = document.querySelector('#desplegableExt');
 
+
+function verMas() {
+    contenidoDesplegable.innerHTML="";
+    let keys = Object.keys(productoActual.extendido)
+    let values = Object.values(productoActual.extendido)
+    for (let i = 0; i < keys.length; i++) {
+        contenidoDesplegable.innerHTML+=`<strong>${keys[i]}:</strong> ${values[i]}<br><br>`
+    }
+    //contenidoDesplegable.style.display="block";
+    //despliegue con animación
+    contenidoDesplegable.classList.remove("folded");
+    contenidoDesplegable.classList.add("unfolded");
+    unfold.style.display="none";
+    fold.style.display="block";
+    // descripcion.style.paddingBottom="0"; esto no ha hecho falta xD
+}
+
+function verMenos() {
+    //contenidoDesplegable.style.display="none";
+    //despliegue con animación
+    contenidoDesplegable.classList.remove("unfolded");
+    contenidoDesplegable.classList.add("folded");
+    unfold.style.display="block";
+    fold.style.display="none";
+    //descripcion.style.paddingBottom="var(--space-xl)"; esto no ha hecho falta xD
+}
+/*------------------------------------------------------------------------------------- */
+getRelacionados(nombre);
 function getRelacionados(nombre) {
-    let index;
     fetch('js/inventario.json')
         .then(response => response.json())
         .then(inventario => {
-            while (query.length < 3) {
+            let index;
+            let i=0;
+            let auxRepes = [];
+            while (i < 3) {
                 index = Math.floor(Math.random() * inventario.length)
-                if (inventario[index]['nombre'] != nombre) {
-                    query.push(inventario[index])
-                }
+                if ((inventario[index]['nombre'] != nombre) && (!auxRepes.includes(index))) {
+                    console.log('entro');
+                    let article = new Article(inventario[index].nombre, inventario[index].categoria, inventario[index].ruta, inventario[index].precio, inventario[index].descripcion, inventario[index].extendido, i);
+                    i++;
+                    article.pintar();
+                } 
+                auxRepes.push(index);
             }
-            pintarTodo(query);
         });
-}
-
-function pintarTodo(resultado) {
-    let i = 0;
-    resultado.forEach(contenido => {
-        let categoria = contenido['categoria'];
-        canvas.innerHTML += `
-            <div class="card shadow-a">
-            <a href="producto.html?nombre=`+contenido['nombre']+`?url=`+contenido['ruta']+`">
-                    <div class="card__header color_`+ i + `">
-                        <img class="img-fit product-img" src="IMG/productos/`+ contenido['ruta'] + `" alt="`+contenido['categoria']+" "+contenido['nombre']+`">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card-title">`+ contenido['nombre'] + `</h3>
-                        <p>`+ categoria.charAt(0).toUpperCase() + categoria.slice(1) + `</p>
-                        <p><strong>`+ contenido['precio'] + `€</strong></p>
-                    </div>
-                    <div class="shopping">
-                        <div class="cart">
-                            <i class="fa-solid fa-bag-shopping svg-cart"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>`
-        if (i < 4) { i++; } 
-        else { i = 0; }
-    });
 }

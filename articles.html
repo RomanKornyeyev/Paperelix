@@ -36,6 +36,7 @@
     <script src="js/sr-general.js" defer></script>
     <script src="js/articles.js" defer></script>
     <script src="js/inventario.json" defer></script>
+    <script src="js/Article.js" defer></script>
     
     <!-- CSS -->
     <link rel="preload" href="css/generales.css" as="styles">
@@ -61,11 +62,9 @@
             </div>
 
             <ul class="menu menu--mbl order1-mbl" role="navigation" aria-label="main">
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Hombre</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Mujer</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Divided</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Niños</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Accesorios</a></li>                
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=pendientes">Pendientes</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=broches">Broches</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=colgantes">Colgantes</a></li>                 
             </ul>
 
             <ul class="menu h-content__item h-content__item--right order0-mbl" role="navigation" aria-label="cuenta y sobre nosotros">
@@ -80,7 +79,7 @@
                     </a>
                 </li>
                 <li class="menu__element">
-                    <a href="#">
+                    <a href="cart.html">
                         <i class="fa-solid fa-cart-shopping pinky svg-nav"></i>
                     </a>
                 </li>
@@ -112,6 +111,8 @@
             </div>
         </nav>
         <main class="main"></main>
+        <!-- BG FIXED -->
+        <div class="bg-fixed-index"></div>
     </div>
 
     <!-- FOOTER -->
@@ -123,9 +124,8 @@
             </div>
             
             <ul class="menu menu--footer" role="navigation" aria-label="sobre nosotros">
-                <li class="menu--footer__element"><a href="#">Link</a></li>
-                <li class="menu--footer__element"><a href="#">Link</a></li>
-                <li class="menu--footer__element"><a href="#">Link</a></li>
+                <li class="menu--footer__element"><a href="about.html">¿Quiénes somos?</a></li>
+                <li class="menu--footer__element"><a href="contact.html">Contacto</a></li>
             </ul>
         </div>
     </footer>

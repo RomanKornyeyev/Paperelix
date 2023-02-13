@@ -36,9 +36,9 @@
     
     <!-- CSS -->
     <link rel="preload" href="css/generales.css" as="styles">
-    <link rel="preload" href="css/contacto.css">
+    <link rel="preload" href="css/contact.css">
     <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/contact.css">
     
     <!-- TITLE -->
     <title>Contacto</title>
@@ -59,11 +59,9 @@
             </div>
 
             <ul class="menu menu--mbl order1-mbl" role="navigation" aria-label="main">
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Hombre</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Mujer</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Divided</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Niños</a></li>
-                <li class="menu__element menu__element--mbl"><a class="pinky" href="#">Accesorios</a></li>                
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=pendientes">Pendientes</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=broches">Broches</a></li>
+                <li class="menu__element menu__element--mbl"><a class="pinky" href="articles.html?categoria=colgantes">Colgantes</a></li>                 
             </ul>
 
             <ul class="menu h-content__item h-content__item--right order0-mbl" role="navigation" aria-label="cuenta y sobre nosotros">
@@ -78,7 +76,7 @@
                     </a>
                 </li>
                 <li class="menu__element">
-                    <a href="#">
+                    <a href="cart.html">
                         <i class="fa-solid fa-cart-shopping pinky svg-nav"></i>
                     </a>
                 </li>
@@ -112,10 +110,12 @@
                     <textarea name="mensaje" id="mensaje" cols="50" rows="7"></textarea>
                 </div>
                 <div class="fomulario__boton">
-                    <input class="btn btn--lg" type="button" value="ENVIAR">
+                    <input class="btn btn--primary btn--lg" type="button" value="ENVIAR">
                 </div>
             </div>
         </main>
+        <!-- BG FIXED -->
+        <div class="bg-fixed-index"></div>
     </div>
 
     <!-- FOOTER -->
@@ -127,9 +127,8 @@
             </div>
             
             <ul class="menu menu--footer" role="navigation" aria-label="sobre nosotros">
-                <li class="menu--footer__element"><a href="#">Link</a></li>
-                <li class="menu--footer__element"><a href="#">Link</a></li>
-                <li class="menu--footer__element"><a href="#">Link</a></li>
+                <li class="menu--footer__element"><a href="about.html">¿Quiénes somos?</a></li>
+                <li class="menu--footer__element"><a href="contact.html">Contacto</a></li>
             </ul>
         </div>
     </footer>

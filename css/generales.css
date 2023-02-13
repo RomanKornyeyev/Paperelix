@@ -372,7 +372,7 @@ h5{font-size: 1.8rem;}
     border-radius: var(--space-m);
     overflow: hidden;
 }
-.card-xl__header > img, .card__header > img{
+.card-xl__header > img, .card__header > img, .product__img-wrapper > img{
     filter: saturate(1.2);
     filter: drop-shadow(0.3rem 0.3rem 0.7rem rgba(37, 8, 87, 0.5));
 }
@@ -603,4 +603,5 @@ h5{font-size: 1.8rem;}
 .margin-bottom-0 {margin-bottom: 0;}
 .border-radius-0{border-radius: 0;}
 .text-align-center{text-align: center;}
-
+.folded{height: 0; transition: height 250ms ease-out; overflow: hidden;}
+.unfolded{height: 22rem; transition: height 250ms ease-out; overflow: hidden;}
