@@ -33,6 +33,7 @@
     <link rel="preload" href="js/sr-general.js" as="script">
     <script src="js/scrollreveal.js"></script>
     <script src="js/sr-general.js" defer></script>
+    <script src="js/cart.js" defer></script>
     
     <!-- CSS -->
     <link rel="preload" href="css/generales.css" as="styles">
@@ -101,53 +102,7 @@
                         <h4>Precio</h4>
                         <h4>Cantidad</h4>
                         <h4>Total</h4>
-                    </div>
-                    <div class="listado__productos">
-                        <div class="producto" id="producto-imagen">
-                            <div class="producto__imagen">
-                                <img src="./img/category_cup.jpg" alt="Producto">
-                            </div>
-                            <div id="producto__desc">
-                                <h4>Este es un producto</h4>
-                                <a href="#">Quitar</a>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <h5>XX€</h5>
-                        </div>
-                        <div class="producto control_cantidad">
-                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn--outline" value="-">
-                            <input type="number" name="cantidad" id="cantidad" min="0" value="0">
-                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus btn--outline" value="+">                          
-                        </div>
-                        <div class="producto">
-                            XX€
-                        </div>
-                        
-                    </div>
-                    <div class="listado__productos">
-                        <div class="producto" id="producto-imagen">
-                            <div class="producto__imagen">
-                                <img src="./img/category_divided.jpg" alt="Producto">
-                            </div>
-                            <div id="producto__desc">
-                                <h4>Este es un producto</h4>
-                                <a href="#">Quitar</a>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <h5>XX€</h5>
-                        </div>
-                        <div class="producto control_cantidad">
-                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn--outline" value="-">
-                            <input type="number" name="cantidad" id="cantidad" min="0" value="0">
-                            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus btn--outline" value="+">                          
-                        </div>
-                        <div class="producto">
-                            XX€
-                        </div>
-                        
-                    </div>
+                    </div>                    
                 </div>
             </div>
             <div class="nota-pedido">
@@ -159,7 +114,7 @@
                 </div>
                 <div class="subtotal-wrapper">
                     <h5>Subtotal: </h5>
-                    <h5 class="subtotal">XX€</h5>
+                    <h5 class="subtotal"></h5>
                 </div>
                 <div class="inputs-wrapper">
                     <div class="wrapper-pagar">

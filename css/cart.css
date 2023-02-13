@@ -10,6 +10,7 @@
     background-color: transparent;
     background-image: url("/img/notas-01.svg");
     padding: var(--space-ultra-l) 0;
+    background-size: cover;
 }
 .titulo-carrito{
     padding-top: var(--space-l);
