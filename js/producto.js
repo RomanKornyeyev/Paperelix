@@ -3,11 +3,8 @@ let nombre = window.location.search.replace('?nombre=', "").replace(/\?url=produ
 
 let canvas = document.querySelector('.section__content--recomendations');
 let nombreProducto = document.querySelector('.content__title');
-let textoProducto = document.createTextNode(nombre);
-nombreProducto.appendChild(textoProducto);
 
 let ruta = window.location.search.replace(/\?nombre=[a-zA-Z203%1]*\?url=/, "")
-console.log(ruta);
 let imagen = document.createElement('img');
 imagen.src = 'img/productos/'+ruta;
 imagen.alt = 'Producto '+nombre;
@@ -31,15 +28,19 @@ function getDescripcion(nombre) {
             let elemento = inventario.find((objeto)=>{
                 return objeto.nombre==nombre
             })
-            productoActual = new Article(elemento.nombre, elemento.categoria, elemento.ruta, elemento.precio, elemento.descripcion, elemento.extendido, null);
+
+            let textoProducto = document.createTextNode(capitalizar(nombre));
+            nombreProducto.appendChild(textoProducto);
+
+            productoActual = new Article(elemento.clave, elemento.nombre, elemento.categoria, elemento.ruta, elemento.precio, elemento.descripcion, elemento.extendido, null);
             textoDescripcion = document.createTextNode(productoActual.descripcion);
             descripcion.appendChild(textoDescripcion);
             precio.innerHTML="Precio: "+productoActual.precio+"€";
 
-            let cosa = document.querySelector("#addCart")
-            cosa.addEventListener("click", function () {
-                addCart(productoActual.nombre)
-            }, productoActual.nombre)
+            let btnCart = document.querySelector("#addCart")
+            btnCart.addEventListener("click", function () {
+                addCart(productoActual.clave, productoActual.nombre)
+            }, productoActual.clave, productoActual.nombre)
         });
 }
 
@@ -78,8 +79,7 @@ function getRelacionados(nombre) {
             while (i < 3) {
                 index = Math.floor(Math.random() * inventario.length)
                 if ((inventario[index]['nombre'] != nombre) && (!auxRepes.includes(index))) {
-                    console.log('entro');
-                    let article = new Article(inventario[index].nombre, inventario[index].categoria, inventario[index].ruta, inventario[index].precio, inventario[index].descripcion, inventario[index].extendido, i);
+                    let article = new Article(inventario[index].clave, inventario[index].nombre, inventario[index].categoria, inventario[index].ruta, inventario[index].precio, inventario[index].descripcion, inventario[index].extendido, i);
                     i++;
                     article.pintar();
                 } 

@@ -16,7 +16,7 @@ fetch('js/inventario.json')
             return elemento.categoria==categoria
         })
         matches.forEach(element => {
-            let article = new Article(element.nombre, element.categoria, element.ruta, element.precio, element.descripcion, element.extendido, i);
+            let article = new Article(element.clave, element.nombre, element.categoria, element.ruta, element.precio, element.descripcion, element.extendido, i);
             if (i < 4) { i++; } 
             else { i = 0; }
             article.pintar();

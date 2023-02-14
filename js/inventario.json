@@ -1,6 +1,6 @@
 [
-    {   
-        "nombre": "Baby calabazas",
+    {   "clave": "calabazas",
+        "nombre": "baby calabazas",
         "categoria": "pendientes", 
         "ruta": "producto-calabazas.png", 
         "precio": 10,
@@ -11,8 +11,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Cañitas",
+    {   "clave": "canitas",
+        "nombre": "cañitas",
         "categoria": "pendientes", 
         "ruta": "producto-cervezas.png", 
         "precio": 10,
@@ -23,8 +23,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Flores",
+    {   "clave": "flores",
+        "nombre": "flores",
         "categoria": "pendientes", 
         "ruta": "producto-flores.png", 
         "precio": 9,
@@ -35,8 +35,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Globos fiesta",
+    {   "clave": "globos",
+        "nombre": "globos fiesta",
         "categoria": "pendientes", 
         "ruta": "producto-globos.png", 
         "precio": 10,
@@ -47,8 +47,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Porciones pizza",
+    {   "clave": "pizza",
+        "nombre": "porciones pizza",
         "categoria": "pendientes", 
         "ruta": "producto-pizzas.png", 
         "precio": 10,
@@ -59,8 +59,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Maki vegetal",
+    {   "clave": "maki",
+        "nombre": "maki vegetal",
         "categoria": "pendientes", 
         "ruta": "producto-sushi.png", 
         "precio": 10,
@@ -71,8 +71,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Doggo Terrier",
+    {   "clave": "doggos",
+        "nombre": "doggo Terrier",
         "categoria": "pendientes", 
         "ruta": "producto-perros.png", 
         "precio": 10,
@@ -83,8 +83,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Patitos",
+    {   "clave": "patitos",
+        "nombre": "patitos",
         "categoria": "pendientes", 
         "ruta": "producto-patitos.png", 
         "precio": 10,
@@ -95,8 +95,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Onigiris",
+    {   "clave": "onigiris",
+        "nombre": "onigiris",
         "categoria": "pendientes", 
         "ruta": "producto-onigiris.png", 
         "precio": 10,
@@ -107,8 +107,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         } 
     },
-    {
-        "nombre": "Java Enjoyers",
+    {   "clave": "java",
+        "nombre": "java enjoyers",
         "categoria": "pendientes", 
         "ruta": "producto-java.png", 
         "precio": 10,
@@ -119,8 +119,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Flores Pascua",
+    {   "clave": "pascua",
+        "nombre": "flores pascua",
         "categoria": "pendientes", 
         "ruta": "producto-pascua.png", 
         "precio": 10,
@@ -131,8 +131,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         } 
     },
-    {
-        "nombre": "Bingsu",
+    {   "clave": "bingsu",
+        "nombre": "bingsu",
         "categoria": "broches", 
         "ruta": "producto-bingsu.png", 
         "precio": 13,
@@ -143,8 +143,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Calabaza",
+    {   "clave": "calabaza",
+        "nombre": "calabaza",
         "categoria": "broches", 
         "ruta": "producto-calabazaBroche.png", 
         "precio": 12.5,
@@ -155,8 +155,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Mini maceta",
+    {   "clave": "minimaceta",
+        "nombre": "mini maceta",
         "categoria": "broches", 
         "ruta": "producto-macetamini.png", 
         "precio": 12.5,
@@ -167,8 +167,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Fantasma",
+    {   "clave": "fantasma",
+        "nombre": "fantasma",
         "categoria": "broches", 
         "ruta": "producto-fantasma.png", 
         "precio": 8,
@@ -179,8 +179,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         } 
     },
-    {
-        "nombre": "Murcielago",
+    {   "clave": "murcielago",
+        "nombre": "murcielago",
         "categoria": "broches", 
         "ruta": "producto-murcielago.png", 
         "precio": 10,
@@ -191,8 +191,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         } 
     },
-    {
-        "nombre": "Tux",
+    {   "clave": "tux",
+        "nombre": "tux",
         "categoria": "colgantes", 
         "ruta": "producto-linux.png", 
         "precio": 10,
@@ -203,8 +203,8 @@
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
         }
     },
-    {
-        "nombre": "Baby Yoda",
+    {   "clave": "grogu",
+        "nombre": "grogu",
         "categoria": "colgantes", 
         "ruta": "producto-grogu.png", 
         "precio": 8,
