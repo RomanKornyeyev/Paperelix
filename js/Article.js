@@ -36,7 +36,7 @@ class Article {
 
 }
 
-function addCart(clave, nombre) {
+function addCart(clave) {
 /*     let info = document.querySelector('.info');
     let alertCart = document.createElement('div');
     let pCart = document.createElement('p');
@@ -45,13 +45,13 @@ function addCart(clave, nombre) {
     alertCart.appendChild(pCart);
     info.appendChild(alertCart); */
 
-    let valor = localStorage.getItem(nombre);
+    let valor = localStorage.getItem(clave);
     if (valor != null) {
         valor++;
-        localStorage.setItem(nombre, valor);
+        localStorage.setItem(clave, valor);
     } else {
         valor=1;
-        localStorage.setItem(nombre, valor);
+        localStorage.setItem(clave, valor);
     }
     reload(clave, valor);
 }
