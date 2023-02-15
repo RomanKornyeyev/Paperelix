@@ -8,40 +8,40 @@ fetch('js/inventario.json')
             //sacar la clave
             const key = localStorage.key(i)
             //obtener coincidencia
-            let matches = inventario.find((elemento)=>{
+            let match = inventario.find((elemento)=>{
                 return elemento.clave==localStorage.key(i)
             })
-            let generar = generarTexto(matches, key)
-            listado.innerHTML+=generar
+            let objeto = new Article (match.clave, match.nombre, match.categoria, match.ruta, match.precio, match.descripcion, match.extendido, null)
+            listado.innerHTML+=generarTexto(objeto, key)
 
-            subtotal += matches.precio*localStorage.getItem(key)
+            subtotal += objeto.precio*localStorage.getItem(key)
         }
         document.querySelector(".subtotal").innerHTML = subtotal
     })
 
 
-function generarTexto(matches, key){
+function generarTexto(objeto, key){
     return ` 
     <div class="listado__productos">
         <div class="producto" id="producto-imagen">
             <div class="producto__imagen">
-                <img src="img/productos/${matches.ruta}" alt="Producto">
+                <img src="img/productos/${objeto.ruta}" alt="Producto">
             </div>
             <div id="producto__desc">
-                <h4>${matches.nombre}</h4>
+                <h4>${objeto.nombre}</h4>
                 <a href="#">Quitar</a>
             </div>
         </div>
         <div class="producto">
-            <h5 class="precioTotal">${matches.precio}€</h5>
+            <h5 class="precioTotal">${objeto.precio}€</h5>
         </div>
         <div class="producto control_cantidad">
             <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn--outline" value="-">
-            <input type="number" name="cantidad" id="cantidad" min="0" value="${localStorage.getItem(key)}">
-            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus btn--outline" value="+">                          
+            <input type="number" name="" min="0" value="${localStorage.getItem(key)}">
+            <input type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp(); addCart('${objeto.clave}')" class="plus btn--outline" value="+">                          
         </div>
         <div class="producto">
-            ${matches.precio*localStorage.getItem(key)}€
+            <p id="${objeto.clave}">${objeto.precio*localStorage.getItem(key)}€</p>
         </div>            
     </div>
     `
