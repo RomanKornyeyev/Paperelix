@@ -1,30 +1,23 @@
-//recuperamos el nombre del artículo con el get 
-let nb = window.location.search.replace('?nombre=', "").replace(/\?url=producto-[a-zA-Z]*/, "").replace(/.png\b/, "").replace(/%20/, " ").replace(/%C3%B1/, "ñ");
-// console.log('roman - '+nb);
 //localizamos el objeto JSON y lo guardamos en un session storage
-
-let carrito = localStorage
 let listado = document.querySelector(".listado")
 fetch('js/inventario.json')
-.then(response => response.json())
-.then(inventario => {
-    let precioFinal = 0
-    for (let i = 0; i < localStorage.length; i++) {
-        //sacar la clave
-        const key = localStorage.key(i)
-        //obtener coincidencia
-        let matches = inventario.find((elemento)=>{
-            // console.log(elemento.nombre)
-            return elemento.clave==localStorage.key(i)
-        })
-        let generar = generarTexto(matches, key)
-        listado.innerHTML+=generar
+    .then(response => response.json())
+    .then(inventario => {
+        let subtotal = 0;
+        for (let i = 0; i < localStorage.length; i++) {
+            //sacar la clave
+            const key = localStorage.key(i)
+            //obtener coincidencia
+            let matches = inventario.find((elemento)=>{
+                return elemento.clave==localStorage.key(i)
+            })
+            let generar = generarTexto(matches, key)
+            listado.innerHTML+=generar
 
-        precioFinal += matches.precio*localStorage.getItem(key)
-        console.log(precioFinal)
-    }
-    document.querySelector(".subtotal").innerHTML = precioFinal
-})
+            subtotal += matches.precio*localStorage.getItem(key)
+        }
+        document.querySelector(".subtotal").innerHTML = subtotal
+    })
 
 
 function generarTexto(matches, key){

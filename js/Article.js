@@ -27,7 +27,7 @@ class Article {
                 </a>
                 <div class="shopping">
                 <p id="`+this.clave+`">`+cantidadProductos+`</p>
-                    <div class="cart addCart" onclick="addCart('`+this.clave+`','`+this.nombre+`')">
+                    <div class="cart addCart" onclick="addCart('`+this.clave+`')">
                     <i class="fa-solid fa-bag-shopping svg-cart"></i>
                     </div>
                 </div>
@@ -45,22 +45,17 @@ function addCart(clave) {
     alertCart.appendChild(pCart);
     info.appendChild(alertCart); */
 
-    let valor = localStorage.getItem(clave);
-    if (valor != null) {
-        valor++;
-        localStorage.setItem(clave, valor);
-    } else {
-        valor=1;
-        localStorage.setItem(clave, valor);
-    }
+    let cantidad = localStorage.getItem(clave)
+    //controlamos si el producto ya ha sido añadido a la lista, de ser asi sumamos uno a la cantidad
+    let valor = (cantidad!=null)?cantidad+1:1;
+    localStorage.setItem(clave, valor);
     reload(clave, valor);
 }
 
 function reload(clave, valor) {
     console.log(valor)
     let cantidad = document.querySelector('#'+clave);
-    cantidad.innerHTML = valor;
-    
+    cantidad.innerHTML = valor;    
 }
 
 function capitalizar(cadena) {
