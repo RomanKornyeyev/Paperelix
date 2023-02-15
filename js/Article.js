@@ -34,6 +34,24 @@ class Article {
             </div>`
     }
 
+    pintarIndex(){
+        mostSold.innerHTML += `
+            <div class="card-xl shadow-a sr-left-4">
+                <div class="card-xl__header">
+                    <img class="img-fit" src="img/productos/producto-pizzas.png" alt="t-shirt">
+                </div>
+                <div class="card-xl__body">
+                    <h3 class="card-xl-title">Pizza!!!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde?</p>
+                </div>
+                <div class="card-xl__footer">
+                    <a href="#" class="btn btn--primary btn--md">VER PRODUCTO</a>
+                    <a href="#" class="btn btn--md btn--outline">AÑADIR</a>
+                </div>
+            </div>
+        `
+    }
+
 }
 
 function addCart(clave) {
