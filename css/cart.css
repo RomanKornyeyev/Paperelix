@@ -3,12 +3,13 @@
 /*AQUÍ VUESTRO CÓDIGO*/
 /* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
 .main{
+    margin: var(--space-xl);
     min-height: calc(100vh - 22rem);
     display: flex;
     justify-content: flex-start;
     flex-flow: column;
     background-color: transparent;
-    background-image: url("/img/notas-01.svg");
+    background-image: url("/img/notas-02.svg");
     padding: var(--space-ultra-l) 0;
     background-size: cover;
 }

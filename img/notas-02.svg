@@ -1,0 +1,26 @@
+<svg id="Capa_1" data-name="Capa 1"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406.72 304.99">
+
+    <defs>
+        <style>.cls-1{fill:#1d1d1b;}.cls-2{fill:#faf9cd;}</style>
+
+        <filter id="f1" x="0" y="0" width="200%" height="200%">
+            <!-- Sombra negra -->
+            <feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.6 0"/>
+            
+            <!-- Donde cae la sombra -->
+            <feOffset result="offOut" in="SourceGraphic" dx="1" dy="1" />
+
+            <!-- Desenfoque -->
+            <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="1" />
+            
+            <!-- Como se ve con respecto al svg ya existente (filtro) -->
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+    </defs>
+    <g id="Capa_2-2" data-name="Capa 2">
+        <g id="objects-2" data-name="objects">
+            <path class="cls-2" filter="url(#f1)" d="M385.19,0V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.62,4.62,0,1,1-4.38,0V0H335.91V7.33a4.56,4.56,0,1,1-4.25,0V0H319.53V7.33a4.57,4.57,0,1,1-4.25,0V0H303.15V7.33a4.57,4.57,0,1,1-4.25,0V0H286.77V7.33a4.57,4.57,0,1,1-4.25,0V0H270.38V7.33a4.56,4.56,0,1,1-4.25,0V0H254V7.33a4.56,4.56,0,1,1-4.25,0V0H237.62V7.33a4.57,4.57,0,1,1-4.25,0V0H221.24V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.62,4.62,0,1,1-4.38,0V0H172.8V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0H140V7.33a4.62,4.62,0,1,1-4.38,0V0h-12V7.33a4.62,4.62,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.39,0V0h-12V7.33a4.62,4.62,0,1,1-4.38,0V0h-12V7.33a4.63,4.63,0,1,1-4.38,0V0H0V304.76H406.17V0Z" transform="translate(0.55 0)"/>
+        </g>
+    </g>
+</svg>

@@ -63,9 +63,9 @@ function addCart(clave) {
     alertCart.appendChild(pCart);
     info.appendChild(alertCart); */
 
-    let cantidad = parseInt(localStorage.getItem(clave))
+    let cantidad = localStorage.getItem(clave)
     //controlamos si el producto ya ha sido añadido a la lista, de ser asi sumamos uno a la cantidad
-    let valor = (cantidad!=null)?cantidad+1:1;
+    let valor = (cantidad!=null)?parseInt(cantidad)+1:1;
     localStorage.setItem(clave, valor);
     reload(clave, valor);
 }

@@ -1,0 +1,86 @@
+/*AQUÍ VUESTRO CÓDIGO*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
+.main{
+    margin: var(--space-xl);
+    background-image: url(../img/notas-02.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.main__titulo{
+    width: 100%;
+    text-align: center;
+    color: var(--dark-pink);
+    border-bottom:3px solid var(--dark-pink);
+    padding: var(--space-ultra-xl) 0 var(--space-m);
+}
+.main__svg {
+    width: var(--width-xs);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputsColores {
+    margin-right: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+}
+.inputsColores>* {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputsColores_titulo {
+    font-family: Imprima;
+    font-size: 2.5rem;
+    margin-bottom: var(--space-m);
+}
+
+#draw { width: 45rem; }
+.hoja,
+.cactus,
+.florUno,
+.centroUno,
+.florDos,
+.centroDos,
+.florTres,
+.centroTres {
+    stroke: var(--secondary-color);
+    stroke-miterlimit: 10;
+    fill: var(--primary-color);
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: var(--space-m);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    height: 4.3rem;
+    width: 4rem;
+    background: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch { border-radius: 50%; }
+input[type="color"]::-moz-color-swatch { border-radius: 50%; }
+
+label:nth-of-type(even) {
+    border-bottom:1px solid var(--strong-gray1);
+    margin-bottom: var(--space-m);
+    padding-bottom: var(--space-m);
+}
