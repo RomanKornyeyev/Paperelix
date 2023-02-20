@@ -80,11 +80,15 @@
     drop-shadow(-5px -5px 0px var(--light-purple))
     ; 
 }
-.content__text {
+.info__content {
     margin-top: var(--space-ml);
     background-color: rgba(102, 19, 208, 0.4);
     padding: var(--space-xxl);
     color: var(--primary-color);
+}
+
+.info__content > p {
+    margin-bottom: 2%;
 }
 
 .section__content--team{
