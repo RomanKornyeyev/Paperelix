@@ -33,50 +33,47 @@ class Article {
                 </div>
             </div>`
     }
-
-    pintarIndex(){
-        mostSold.innerHTML += `
-            <div class="card-xl shadow-a sr-left-4">
-                <div class="card-xl__header">
-                    <img class="img-fit" src="img/productos/producto-pizzas.png" alt="t-shirt">
-                </div>
-                <div class="card-xl__body">
-                    <h3 class="card-xl-title">Pizza!!!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, unde?</p>
-                </div>
-                <div class="card-xl__footer">
-                    <a href="#" class="btn btn--primary btn--md">VER PRODUCTO</a>
-                    <a href="#" class="btn btn--md btn--outline">AÑADIR</a>
-                </div>
-            </div>
-        `
-    }
-
 }
 
-function addCart(clave) {
-/*     let info = document.querySelector('.info');
-    let alertCart = document.createElement('div');
-    let pCart = document.createElement('p');
-    let textCart = document.createTextNode('Producto añadido a la cesta');
-    pCart.appendChild(textCart);
-    alertCart.appendChild(pCart);
-    info.appendChild(alertCart); */
 
-    let cantidad = localStorage.getItem(clave)
+function addCart(clave) {
+    actualizarPrecio(clave, true)
+    let cantidad = parseInt(localStorage.getItem(clave))
     //controlamos si el producto ya ha sido añadido a la lista, de ser asi sumamos uno a la cantidad
-    let valor = (cantidad!=null)?parseInt(cantidad)+1:1;
+    let valor = (cantidad!=null && !isNaN(cantidad))?cantidad+1:1;
     localStorage.setItem(clave, valor);
     reload(clave, valor);
 }
 
+
 function reload(clave, valor) {
     console.log(valor)
-    let cantidad = document.querySelector('#'+clave);
-    cantidad.innerHTML = valor;    
+    let cantidad
+    cantidad = document.querySelector('#'+clave); 
+    cantidad.innerHTML = valor;
+    console.log("hola")  
 }
 
 function capitalizar(cadena) {
     let resultado = cadena.charAt(0).toUpperCase() + cadena.slice(1);
     return resultado;
+}
+
+function actualizarPrecio(clave, aumentar){
+    try {
+        let resultado = document.getElementById(clave+"Resultado");
+        let precio = document.getElementById(clave+"Precio").innerHTML;
+
+        let cantidad
+        if(aumentar){
+            cantidad = (parseFloat(localStorage.getItem(clave))+1)
+        }else{
+            cantidad = parseFloat(localStorage.getItem(clave))-1
+        }
+        precio = precio.slice(0, precio.length-1)
+        resultado.innerHTML= (cantidad*parseFloat(precio))+"€"
+        
+    } catch (error) {
+        
+    }
 }
