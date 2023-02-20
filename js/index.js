@@ -15,7 +15,7 @@ function cosa() {
                     </div>
                     <div class="card-xl__footer">
                         <a href="producto.html?nombre=${inventario[0].nombre}?url=${inventario[0].ruta}" class="btn btn--primary btn--md">VER PRODUCTO</a>
-                        <a href="#" class="btn btn--md btn--outline" onclick="addCart('${inventario[0].clave}')">AÑADIR</a>
+                        <a class="btn btn--md btn--outline" onclick="addCart('${inventario[0].clave}')">AÑADIR</a>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ function cosa() {
                     </div>
                     <div class="card-xl__footer">
                         <a href="producto.html?nombre=${inventario[1].nombre}?url=${inventario[1].ruta}" class="btn btn--primary btn--md">VER PRODUCTO</a>
-                        <a href="#" class="btn btn--md btn--outline" onclick="addCart('${inventario[1].clave}')">AÑADIR</a>
+                        <a class="btn btn--md btn--outline" onclick="addCart('${inventario[1].clave}')">AÑADIR</a>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ function cosa() {
                     </div>
                     <div class="card-xl__footer">
                         <a href="producto.html?nombre=${inventario[2].nombre}?url=${inventario[2].ruta}" class="btn btn--primary btn--md">VER PRODUCTO</a>
-                        <a href="#" class="btn btn--md btn--outline" onclick="addCart('${inventario[2].clave}')">AÑADIR</a>
+                        <a class="btn btn--md btn--outline" onclick="addCart('${inventario[2].clave}')">AÑADIR</a>
                     </div>
                 </div>
             `;
