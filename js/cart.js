@@ -2,28 +2,41 @@
 //localizamos el objeto JSON y lo guardamos en un session storage
 let listado = document.querySelector(".listado")
 
+
 pintarLeerJSON()
 
 function pintarLeerJSON(){
     fetch('js/inventario.json')
     .then(response => response.json())
     .then(inventario => {
-        let subtotal = 0;
-        listado.innerHTML=""
-        listado.innerHTML=pintarCabecera();
-        for (let i = 0; i < localStorage.length; i++) {
-            //sacar la clave
-            const key = localStorage.key(i)
-            //obtener coincidencia
-            let match = inventario.find((elemento)=>{
-                return elemento.clave==localStorage.key(i)
-            })
-            let objeto = new Article (match.clave, match.nombre, match.categoria, match.ruta, match.precio, match.descripcion, match.extendido, null)
-            listado.innerHTML+=generarCarrito(objeto, key)
-
-            subtotal += objeto.precio*localStorage.getItem(key)
+        if(localStorage.length==0){
+            listado.innerHTML=""
+            let formulario = document.querySelector(".nota-pedido")
+            formulario.style.display="none"
+            listado.innerHTML="<h2>No tienes nada en el carrito</h2>";
+            listado.innerHTML+="<h4>Date una vuelta por la tienda</h4>"
+            let imagen = document.createElement("img")
+            listado.appendChild(imagen)
+            imagen.classList="desierto"
+            imagen.src="img/desert.svg"
+        }else{
+            let subtotal = 0;
+            listado.innerHTML=""
+            listado.innerHTML=pintarCabecera();
+            for (let i = 0; i < localStorage.length; i++) {
+                //sacar la clave
+                const key = localStorage.key(i)
+                //obtener coincidencia
+                let match = inventario.find((elemento)=>{
+                    return elemento.clave==localStorage.key(i)
+                })
+                let objeto = new Article (match.clave, match.nombre, match.categoria, match.ruta, match.precio, match.descripcion, match.extendido, null)
+                listado.innerHTML+=generarCarrito(objeto, key)
+    
+                subtotal += objeto.precio*localStorage.getItem(key)
+            }
+            document.querySelector(".subtotal").innerHTML = subtotal
         }
-        document.querySelector(".subtotal").innerHTML = subtotal
     })
 }
 

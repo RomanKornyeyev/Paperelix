@@ -143,7 +143,9 @@ textarea{
     justify-content: flex-end;
     gap: var(--space-l);
 }
-
+.desierto{
+    width: 20%;
+}
 @media screen and (max-width: 900px){
     
     /* ajustar el grid, quitar la descripcion */
