@@ -350,7 +350,7 @@ h5{font-size: 1.8rem;}
 }
 
 /* xl cards (index)*/
-
+.card-xl{background-color: var(--primary-color);}
 .card-xl:hover img{ transform: scale(1.2); }
 .card-xl__header{
     width: 100%;
