@@ -42,6 +42,9 @@ function addCart(clave) {
     //controlamos si el producto ya ha sido añadido a la lista, de ser asi sumamos uno a la cantidad
     let valor = (cantidad!=null && !isNaN(cantidad))?cantidad+1:1;
     localStorage.setItem(clave, valor);
+    setTimeout(popUp, 100);
+    setTimeout(removePopUp, 2100);
+
     reload(clave, valor);
 }
 
@@ -78,4 +81,43 @@ function actualizarPrecio(clave, aumentar){
 
         console.log(subtotal)
     } catch (error) {}
+}
+
+function popUp () {
+    let contenedor = document.createElement('div');
+    contenedor.setAttribute('class', 'popUp');
+    let titulo = document.createElement('h3');
+    let texto = document.createTextNode('¡Producto añadido a la cesta!');
+    titulo.appendChild(texto);
+    contenedor.appendChild(titulo);
+
+    contenedor.style.top=window.innerHeight/2+"px";
+    contenedor.style.left=window.innerWidth/2.5+"px";
+    let main = document.querySelector('.main');
+
+    if (document.querySelector('.section__content--product')) {
+        let seccion = document.querySelector('.section__content--product');
+        seccion.style.filter="blur(0.15rem)";
+    } else {
+        let tarjetas = document.querySelectorAll('.card');
+        tarjetas.forEach(element => {
+            element.style.filter="blur(0.15rem)";
+        });
+    }
+
+    main.appendChild(contenedor);
+}
+
+function removePopUp () {
+    document.querySelector('.popUp').remove();
+    if (document.querySelector('.section__content--product')) {
+        let seccion = document.querySelector('.section__content--product');
+        seccion.style.filter="blur(0)";
+    } else {
+        let tarjetas = document.querySelectorAll('.card');
+        tarjetas.forEach(element => {
+            element.style.filter="blur(0)";
+        });
+    }
+
 }

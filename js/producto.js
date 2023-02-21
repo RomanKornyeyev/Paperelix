@@ -39,8 +39,9 @@ function getDescripcion(nombre) {
 
             let btnCart = document.querySelector("#addCart")
             btnCart.addEventListener("click", function () {
-                addCart(productoActual.clave, productoActual.nombre)
-            }, productoActual.clave, productoActual.nombre)
+                console.log("Paso por aqui: "+productoActual.clave);
+                addCart(productoActual.clave);
+            }, productoActual.clave)
         });
 }
 

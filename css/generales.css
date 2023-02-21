@@ -462,7 +462,14 @@ h5{font-size: 1.8rem;}
     );
     z-index: -1;
 }
-
+.popUp {
+    position: absolute;
+    background-color: var(--dark-pink);
+    padding: 1%;
+    height: fit-content;
+    color: var(--primary-color);
+    border-radius: 10px;
+}
 /* ========== 810px (tablet) ========== */
 @media screen and (max-width: 810px){
     /* === HEADER + NAV === */
