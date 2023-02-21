@@ -8,7 +8,6 @@
 }
 /* Disposicion del main: dos elementos, un titulo h2 y un div con el formulario. */
 .main{
-    background-color: var(--beige);
     width: 100%;
     display: flex;
     justify-content: center;

@@ -1,20 +1,42 @@
-@import url('generales.franco.css');
+@import url('generales.anabel.css');
 
 /*AQUÍ VUESTRO CÓDIGO*/
-.main__formulario{
-    width: 65%;
-    min-height: 30rem;
-    padding: var(--space-xxl);
-    border: 2px solid;
+.container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    margin: var(--space-xl);
+    background-image: url(../img/notas-02.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-flow: column;
-    gap: var(--space-m);
+}
+.main__formulario {
+    width: var(--width-xs);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .main__formulario>div{
-    width: 100%;
+    width: 70%;
 }
+.main__titulo{
+    width: 100%;
+    text-align: center;
+    color: var(--dark-pink);
+    border-bottom:3px solid var(--dark-pink);
+    padding: var(--space-ultra-xl) 0 var(--space-m);
+}
+
 /*Dos elementos: nombre y correo, hago flex SOBRE LOS LABELS (no se si es lo correcto)*/
 .formulario__datos{
     display:flex;
@@ -27,6 +49,7 @@
     display: flex;
     flex-flow: column;
     gap: var(--space-m);
+    margin-bottom: var(--space-xxl);
 }
 input, textarea{
     border: 2px solid;
@@ -37,4 +60,18 @@ input, textarea{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.main__contacto {
+    width: var(--width-xs);
+    width: 56%;
+}
+.main__contacto>* {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
 }

@@ -3,25 +3,29 @@
         "nombre": "baby calabazas",
         "categoria": "pendientes", 
         "ruta": "producto-calabazas.png", 
-        "precio": 10,
+        "precio": 8,
         "descripcion": "Porque llevando estas baby calabazas, todos los días del año pueden ser Halloween si quieres. ¡No lo dudes y hazte con estas calabazitas.",
         "extendido": {
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"naranja",
+        "acabado":"stud"
     },
     {   "clave": "canitas",
         "nombre": "cañitas",
         "categoria": "pendientes", 
         "ruta": "producto-cervezas.png", 
-        "precio": 10,
+        "precio": 12,
         "descripcion": "Divertidas jarras de cerveza para ir de tapas con tus amigos por el centro de la ciudad, en casa o de fiesta.",
         "extendido": {
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"amarillo",
+        "acabado":"stud"
     },
     {   "clave": "flores",
         "nombre": "flores",
@@ -33,7 +37,9 @@
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"azul",
+        "acabado":"colgantes"
     },
     {   "clave": "globos",
         "nombre": "globos fiesta",
@@ -45,31 +51,37 @@
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"multicolor",
+        "acabado":"colgantes"
     },
     {   "clave": "pizza",
         "nombre": "porciones pizza",
         "categoria": "pendientes", 
         "ruta": "producto-pizzas.png", 
-        "precio": 10,
+        "precio": 12,
         "descripcion": "Para todos los pizzalovers, ¡estos son vuestros pendientes! Dos porciones de pizza con su masa original, tomates cherries, aceitunas negras, queso,... Irresistibles y adorables.",
         "extendido": {
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"multicolor",
+        "acabado":"colgantes"
     },
     {   "clave": "maki",
         "nombre": "maki vegetal",
         "categoria": "pendientes", 
         "ruta": "producto-sushi.png", 
-        "precio": 10,
+        "precio": 8,
         "descripcion": "Porque el sushi no sólo se disfruta degustándolo... atrévete con estas piezas de maki vegetal que combina mango, aguacate y salmón.",
         "extendido": {
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"blanco",
+        "acabado":"stud"
     },
     {   "clave": "doggos",
         "nombre": "doggo Terrier",
@@ -81,7 +93,9 @@
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"blanco",
+        "acabado":"stud"
     },
     {   "clave": "patitos",
         "nombre": "patitos",
@@ -93,19 +107,23 @@
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"multicolor",
+        "acabado":"stud"
     },
     {   "clave": "onigiris",
         "nombre": "onigiris",
         "categoria": "pendientes", 
         "ruta": "producto-onigiris.png", 
-        "precio": 10,
+        "precio": 7.5,
         "descripcion": "El mítico snack coreano, la adorable bolita de arroz rellena con su alga. Con estos onigiris tan combinables podrás usarlos siempre que desees.",
         "extendido": {
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        } 
+        },
+        "color":"blanco",
+        "acabado":"stud"
     },
     {   "clave": "java",
         "nombre": "java enjoyers",
@@ -117,19 +135,23 @@
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes largos o colgantes de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"azul",
+        "acabado":"colgantes"
     },
     {   "clave": "pascua",
         "nombre": "flores pascua",
         "categoria": "pendientes", 
         "ruta": "producto-pascua.png", 
-        "precio": 10,
+        "precio": 8.5,
         "descripcion": "Estas flores de pascua con remate dorado pertenecen a la colección de Navidad de 2022.",
         "extendido": {
             "Material": "Pendientes realizados con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Pendientes de botón 'stud' de plata de ley 925 e hipoalergénico.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        } 
+        },
+        "color":"rojo",
+        "acabado":"stud"
     },
     {   "clave": "bingsu",
         "nombre": "bingsu",
@@ -141,7 +163,9 @@
             "Material": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"amarillo",
+        "acabado":"small"
     },
     {   "clave": "calabaza",
         "nombre": "calabaza",
@@ -153,7 +177,9 @@
             "Material": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"naranja",
+        "acabado":"big"
     },
     {   "clave": "minimaceta",
         "nombre": "mini maceta",
@@ -165,7 +191,9 @@
             "Material": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"multicolor",
+        "acabado":"small"
     },
     {   "clave": "fantasma",
         "nombre": "fantasma",
@@ -177,7 +205,9 @@
             "Material": "Broche realizado con tiras de papel de colores de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        } 
+        } ,
+        "color":"blanco",
+        "acabado":"big"
     },
     {   "clave": "murcielago",
         "nombre": "murcielago",
@@ -189,7 +219,9 @@
             "Material": "Broche realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Enganche de acero inoxidable.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        } 
+        },
+        "color":"negro",
+        "acabado":"small"
     },
     {   "clave": "tux",
         "nombre": "tux",
@@ -201,7 +233,9 @@
             "Material": "Colgante realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Cadena no incluida*.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        }
+        },
+        "color":"negro",
+        "acabado":"small"
     },
     {   "clave": "grogu",
         "nombre": "grogu",
@@ -213,6 +247,8 @@
             "Material": "Colgante realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto. Cadena no incluida*.",
             "Medidas": "cm aproximadamente.",
             "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
-        } 
+        },
+        "color":"verde",
+        "acabado":"small"
     }
 ]

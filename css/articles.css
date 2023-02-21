@@ -42,6 +42,9 @@
     padding: var(--space-xl);
     /* border: 1px solid black; */
 }
+.grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
 .caja{
     border: 1px solid black;
     height: 20rem;

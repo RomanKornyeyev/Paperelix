@@ -1,7 +1,6 @@
-
 //localizamos el objeto JSON y lo guardamos en un session storage
 let listado = document.querySelector(".listado")
-
+let product_wrapper = document.querySelector('.productos-wrapper');
 
 pintarLeerJSON()
 
@@ -10,15 +9,20 @@ function pintarLeerJSON(){
     .then(response => response.json())
     .then(inventario => {
         if(localStorage.length==0){
+            product_wrapper.setAttribute('class', 'box_desierto');
             listado.innerHTML=""
             let formulario = document.querySelector(".nota-pedido")
             formulario.style.display="none"
-            listado.innerHTML="<h2>No tienes nada en el carrito</h2>";
-            listado.innerHTML+="<h4>Date una vuelta por la tienda</h4>"
-            let imagen = document.createElement("img")
-            listado.appendChild(imagen)
-            imagen.classList="desierto"
-            imagen.src="img/desert.svg"
+            listado.innerHTML="<h2>¡No tienes nada en el carrito!</h2>";
+            listado.innerHTML+="<h3>Date una vuelta por la tienda ヽ(ヅ)ノ</h3>"
+            let i=0;
+            while (i<3) {
+                let imagen = document.createElement("img")
+                listado.appendChild(imagen)
+                imagen.classList="desierto"
+                imagen.src="img/desert.svg"
+                i++;
+            }
         }else{
             let subtotal = 0;
             listado.innerHTML=""
@@ -48,7 +52,7 @@ function generarCarrito(objeto, key){
                 <img src="img/productos/${objeto.ruta}" alt="Producto">
             </div>
             <div id="producto__desc">
-                <h4>${objeto.nombre}</h4>
+                <h4>${capitalizar(objeto.nombre)}</h4>
                 <a href="#" onclick="quitarElemento('${objeto.clave}')">Quitar</a>
             </div>
         </div>

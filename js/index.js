@@ -11,7 +11,7 @@ function cosa() {
                 index = Math.floor(Math.random() * inventario.length)
                 if (!auxRepes.includes(index)) {
                     mostSold.innerHTML += `
-                    <div class="card-xl shadow-a sr-left-4">
+                    <div class="card-xl shadow-a">
                         <div class="card-xl__header">
                             <img class="img-fit" src="img/productos/${inventario[index].ruta}" alt="t-shirt">
                         </div>
