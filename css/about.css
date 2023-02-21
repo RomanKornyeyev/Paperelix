@@ -162,3 +162,25 @@
     left: 82%;
     transform: rotate(45deg);
 }
+.contenedor_video {
+    background-color: #f1fbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+video {
+    width: 70%;
+}
+video[poster] {
+    object-fit: scale-down;
+
+
+
+
+
+
+
+
+
+     
+}

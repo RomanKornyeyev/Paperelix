@@ -23,6 +23,10 @@
     border-bottom:3px solid var(--dark-pink);
     padding: var(--space-ultra-xl) 0 var(--space-m);
 }
+audio::-webkit-media-controls-panel{
+    padding-top: 2%;
+    background: #faf9cd;
+}
 .main__svg {
     width: var(--width-xs);
     padding: var(--space-xl);
