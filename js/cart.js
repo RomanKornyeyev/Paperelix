@@ -37,7 +37,7 @@ function pintarLeerJSON(){
                 let objeto = new Article (match.clave, match.nombre, match.categoria, match.ruta, match.precio, match.descripcion, match.extendido, null)
                 listado.innerHTML+=generarCarrito(objeto, key)
     
-                subtotal += objeto.precio*localStorage.getItem(key)
+                subtotal = (parseFloat(subtotal)+parseFloat(objeto.precio)*parseFloat(localStorage.getItem(key)))+"€"
             }
             document.querySelector(".subtotal").innerHTML = subtotal
         }
