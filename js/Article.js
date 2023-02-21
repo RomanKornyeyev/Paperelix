@@ -63,17 +63,19 @@ function actualizarPrecio(clave, aumentar){
     try {
         let resultado = document.getElementById(clave+"Resultado");
         let precio = document.getElementById(clave+"Precio").innerHTML;
+        let subtotal = document.querySelector(".subtotal")
 
         let cantidad
         if(aumentar){
             cantidad = (parseFloat(localStorage.getItem(clave))+1)
+            subtotal.innerHTML=parseFloat(subtotal.innerHTML)+parseFloat(precio)+"€"
         }else{
             cantidad = parseFloat(localStorage.getItem(clave))-1
+            subtotal.innerHTML=parseFloat(subtotal.innerHTML)-parseFloat(precio)+"€"
         }
         precio = precio.slice(0, precio.length-1)
         resultado.innerHTML= (cantidad*parseFloat(precio))+"€"
-        
-    } catch (error) {
-        
-    }
+
+        console.log(subtotal)
+    } catch (error) {}
 }
