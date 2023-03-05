@@ -17,7 +17,7 @@ class Article {
             <div class="card shadow-a">
                 <a href="producto.html?nombre=`+ this.nombre + `?url=` + this.ruta + `">
                         <div class="card__header color_`+ this.color + `">
-                            <img class="img-fit product-img" src="IMG/productos/`+ this.ruta + `" alt="` + this.categoria + " " + this.nombre + `">
+                            <img class="img-fit product-img" src="../IMG/productos/`+ this.ruta + `" alt="` + this.categoria + " " + this.nombre + `">
                         </div>
                         <div class="card__body">
                             <h3 class="card-title">`+ capitalizar(this.nombre) + `</h3>
