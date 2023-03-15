@@ -135,7 +135,7 @@
 }
 .category:hover .category__title, .category:focus .category__title{text-decoration: underline;}
 .category__title{
-    line-height: 5rem;
+    line-height: 7rem;
     text-align: center;
     /* border: 1px solid black; */
 }

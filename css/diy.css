@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    padding-bottom: var(--space-xl);
 }
 .main__titulo{
     width: 100%;
@@ -48,7 +49,7 @@ audio::-webkit-media-controls-panel{
     justify-content: space-between;
 }
 .inputsColores_titulo {
-    font-family: Imprima;
+    font-family: 'Imprima', sans-serif;
     font-size: 2.5rem;
     margin-bottom: var(--space-m);
 }
@@ -56,12 +57,12 @@ audio::-webkit-media-controls-panel{
 #draw { width: 45rem; }
 .hoja,
 .cactus,
-.florUno,
-.centroUno,
-.florDos,
-.centroDos,
-.florTres,
-.centroTres {
+.primeraFlor,
+.pistiloPrimeraFlor,
+.segundaFlor,
+.pistiloSegundaFlor,
+.terceraFlor,
+.pistiloTerceraFlor {
     stroke: var(--secondary-color);
     stroke-miterlimit: 10;
     fill: var(--primary-color);

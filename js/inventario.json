@@ -250,5 +250,19 @@
         },
         "color":"verde",
         "acabado":"small"
+    },
+    {   "clave": "diy",
+        "nombre": "personalización",
+        "categoria": "personalizacion", 
+        "ruta": "SVG-P-colores.svg", 
+        "precio": 20,
+        "descripcion": "Conviértete en artista y escoge tu mismo los colores de tu próximo Paperelix. Cuando tu obra esté terminada, simplemente añádela al carrito y espera con ganas tu pieza.",
+        "extendido": {
+            "Material": "Paperelix realizado con tiras de papel de colores mediante la técnica del quilling, de un gramaje de 80gr y recubrimiento de resina epoxi para una mayor duración y resistencia del producto.",
+            "Medidas": "cm aproximadamente.",
+            "Atención": "Los colores pueden diferir ligeramente debido a los colores establecidos en tu monitor."
+        },
+        "color":"multicolor",
+        "acabado":"big"
     }
 ]

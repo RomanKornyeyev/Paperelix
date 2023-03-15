@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <!-- META -->
@@ -33,6 +33,7 @@
     <link rel="preload" href="js/sr-general.js" as="script">
     <script src="js/scrollreveal.js"></script>
     <script src="js/sr-general.js" defer></script>
+    <script src="js/Article.js" defer></script>
     <script src="js/diy.js" defer></script>
     
     <!-- CSS -->
@@ -102,44 +103,8 @@
             <div class="main__svg">
                 <div class="inputsColores">
                     <h2 class="inputsColores_titulo">Colorea a tu gusto:</h2>
-                    <label for="florUno_figura">Primera flor:
-                        <input type="color" name="inputflorUno"
-                        id="florUno_figura" value="#ffffff">
-                    </label>
-                    <label for="centroUno_figura">Pistilo primera flor: 
-                        <input type="color" name="inputCentroUno"
-                        id="centroUno_figura" value="#ffffff">
-                    </label>
-            
-                    <label for="florDos_figura">Segunda flor:
-                        <input type="color" name="inputflorDos"
-                        id="florDos_figura" value="#ffffff">
-                    </label>
-                    <label for="centroDos_figura">Pistilo segunda flor: 
-                        <input type="color" name="inputCentroDos"
-                        id="centroDos_figura" value="#ffffff">
-                    </label>
-                    
-                    <label for="florTres_figura">Tercera flor:
-                        <input type="color" name="inputflorTres"
-                        id="florTres_figura" value="#ffffff">
-                    </label>
-                    <label for="centroTres_figura">Pistilo tercera flor: 
-                        <input type="color" name="inputCentroTres"
-                        id="centroTres_figura" value="#ffffff">
-                    </label>
-            
-                    
-                    <label for="hoja">Hojas: 
-                        <input type="color" name="inputHoja"
-                        id="hoja_figura" value="#ffffff">
-                    </label>
-                    
-                    <label for="cactus">Cactus: 
-                        <input type="color" name="inputCactus"
-                        id="cactus_figura" value="#ffffff">
-                    </label>
                 </div>
+                
                 <svg id="draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.73 312.78">
                     <path class="cactus figura"
                         d="M195.18,160.28l2-121.25s-2.18-36-40.45-39c0,0-40.44-1.09-42.19,42.74L118.3,210.4s-21-6.54-21.74-27l-.93-85.94s-2-20.67-23.58-21.65S45.26,97.42,45.26,97.42v83.76s-.65,63.88,73.69,74.35l.88,56.25H194l1.22-103.56S257.84,201,267,143.68V82.2s-1.52-20.71-27.25-22.46c0,0-24.64.22-27.47,24.86l.22,54.72A34.64,34.64,0,0,1,195.18,160.28Z"
@@ -153,22 +118,22 @@
                         transform="translate(-44.76 0.5)" />
                     
                     <g id="flor">
-                        <path class="florUno figura"
+                        <path class="primeraFlor figura"
                             d="M117,80.63c2.32,7.22,11,14,11,14s6.39-9,6.55-16.59c.1-5-1.63-11.12-10.44-9.89S115.5,75.91,117,80.63Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florUno figura"
+                        <path class="primeraFlor figura"
                             d="M111.33,100.81c7.58,0,16.73-6.17,16.73-6.17s-6.59-8.87-13.75-11.36c-4.68-1.62-11.08-1.89-12.63,6.87S106.37,100.8,111.33,100.81Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florUno figura"
+                        <path class="primeraFlor figura"
                             d="M128.76,112.47c2.36-7.21-.7-17.83-.7-17.83s-10.47,3.53-15,9.57c-3,4-5.22,10,2.63,14.14S127.22,117.18,128.76,112.47Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florUno figura"
+                        <path class="primeraFlor figura"
                             d="M145.23,99.49c-6.12-4.47-17.16-4.85-17.16-4.85s.12,11,4.45,17.28c2.82,4.07,7.85,8,14.25,1.87S149.24,102.41,145.23,99.49Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florUno figura"
+                        <path class="primeraFlor figura"
                             d="M138,79.81c-6.15,4.44-9.92,14.83-9.92,14.83s10.54,3.3,17.8,1.11c4.75-1.43,10.08-5,6.18-13S142,76.91,138,79.81Z"
                             transform="translate(-44.76 0.5)" />
-                        <circle class="centroUno figura" cx="82.99" cy="95.19" r="5.01" />
+                        <circle class="pistiloPrimeraFlor figura" cx="82.99" cy="95.19" r="5.01" />
                     </g>
 
                     <path class="hoja figura"
@@ -179,42 +144,46 @@
                         transform="translate(-44.76 0.5)" />
                     
                     <g id="flor-2">
-                        <path class="florTres figura"
+                        <path class="terceraFlor figura"
                             d="M128.86,177.1c-.94,7.53,4.09,17.37,4.09,17.37s9.61-5.48,13-12.28c2.18-4.45,3.21-10.76-5.29-13.36S129.47,172.19,128.86,177.1Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florTres figura"
+                        <path class="terceraFlor figura"
                             d="M115.18,193c6.87,3.21,17.77,1.47,17.77,1.47s-2.23-10.83-7.67-16.11c-3.56-3.44-9.25-6.39-14.35.9S110.69,190.89,115.18,193Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florTres figura"
+                        <path class="terceraFlor figura"
                             d="M126.06,210.92c5.18-5.54,6.89-16.45,6.89-16.45s-11-1.22-17.69,2.32c-4.38,2.31-8.93,6.82-3.57,13.92S122.68,214.54,126.06,210.92Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florTres figura"
+                        <path class="terceraFlor figura"
                             d="M146.47,206.11c-3.66-6.64-13.52-11.64-13.52-11.64S128.4,204.54,129.7,212c.84,4.88,3.72,10.6,12.13,7.71S148.87,210.45,146.47,206.11Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florTres figura"
+                        <path class="terceraFlor figura"
                             d="M148.21,185.21c-7.45,1.43-15.25,9.26-15.25,9.26s8.16,7.44,15.67,8.52c4.91.7,11.24-.27,11.08-9.16S153.07,184.27,148.21,185.21Z"
                             transform="translate(-44.76 0.5)" />
-                        <circle class="centrotres figura" cx="87.88" cy="194.88" r="5.01" />
+                        <circle class="pistiloTerceraFlor figura" cx="87.88" cy="194.88" r="5.01" />
                     </g>
                     <g id="flor-3">
-                        <path class="florDos figura"
+                        <path class="segundaFlor figura"
                             d="M110.53,126c-1.39,9.85,5,22.86,5,22.86s12.71-7,17.24-15.83c2.95-5.8,4.44-14.06-6.66-17.65S111.43,119.55,110.53,126Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florDos figura"
+                        <path class="segundaFlor figura"
                             d="M92.24,146.55c9,4.37,23.3,2.3,23.3,2.3s-2.71-14.24-9.74-21.29c-4.59-4.59-12-8.57-18.84.88S86.4,143.7,92.24,146.55Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florDos figura"
+                        <path class="segundaFlor figura"
                             d="M106.15,170.3c6.91-7.16,9.39-21.45,9.39-21.45s-14.39-1.82-23.26,2.68c-5.79,2.95-11.86,8.76-5,18.2S101.64,175,106.15,170.3Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florDos figura"
+                        <path class="segundaFlor figura"
                             d="M133,164.41c-4.67-8.79-17.49-15.56-17.49-15.56s-6.18,13.12-4.64,23c1,6.42,4.66,14,15.76,10.36S136.09,170.15,133,164.41Z"
                             transform="translate(-44.76 0.5)" />
-                        <path class="florDos figura"
+                        <path class="segundaFlor figura"
                             d="M135.74,137c-9.79,1.73-20.19,11.84-20.19,11.84s10.55,9.93,20.38,11.5c6.42,1,14.75-.12,14.72-11.79S142.14,135.89,135.74,137Z"
                             transform="translate(-44.76 0.5)" />
-                        <circle class="centroDos figura" cx="70.37" cy="149.23" r="6.58" />
+                        <circle class="pistiloSegundaFlor figura" cx="70.37" cy="149.23" r="6.58" />
                     </g>
                 </svg>
+            </div>
+
+            <div class="info__btn">
+                <a href="#" class="btn btn--md btn--primary" id="addCart">AÑADIR A LA CESTA</a>
             </div>
         </main>
         <!-- BG FIXED -->

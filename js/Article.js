@@ -42,9 +42,13 @@ function addCart(clave) {
     //controlamos si el producto ya ha sido añadido a la lista, de ser asi sumamos uno a la cantidad
     let valor = (cantidad!=null && !isNaN(cantidad))?cantidad+1:1;
     localStorage.setItem(clave, valor);
-    setTimeout(popUp, 100);
-    setTimeout(removePopUp, 2100);
-
+    if (!window.location.pathname.includes('cart')) {
+        setTimeout(popUp, 100);
+        setTimeout(removePopUp, 2100);
+        console.log('se muestra el popup')
+    } else {
+        console.log('no se muestra el popup')
+    }
     reload(clave, valor);
 }
 

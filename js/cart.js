@@ -2,6 +2,8 @@
 let listado = document.querySelector(".listado")
 let product_wrapper = document.querySelector('.productos-wrapper');
 
+let notas = document.querySelector('#comentario');
+notas.innerHTML=sessionStorage.getItem('colores');
 pintarLeerJSON()
 
 function pintarLeerJSON(){
@@ -94,6 +96,10 @@ function removeCart(clave){
 }
 
 function quitarElemento(clave){
+    if (clave == 'diy') {
+        notas.innerHTML=" "
+        sessionStorage.removeItem('colores')
+    }
     localStorage.removeItem(clave)
     pintarLeerJSON()
 }
